@@ -50,7 +50,7 @@ class Page2ViewController: UIViewController {
         if(timeSegment == nil){
             return
         }
-        var time: String = (timeSegment.titleForSegmentAtIndex(0)?.lowercaseString)!//timeSegment.selectedSegmentIndex
+        var time: String = (timeSegment.titleForSegmentAtIndex(timeSegment.selectedSegmentIndex)?.lowercaseString)!
         var gender:String = FirstViewController.variables.gender.lowercaseString
         var locat:String = (locationSegment.titleForSegmentAtIndex(locationSegment.selectedSegmentIndex)?.lowercaseString)!
         locat = locat + " "

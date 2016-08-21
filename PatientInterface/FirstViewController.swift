@@ -34,6 +34,11 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         edited()
         
     }
+    @IBAction func clearPages(sender: UIButton) {
+        GeneralViewController.variables.page1.clearAll(btnClearAll)
+        GeneralViewController.variables.page2.clearAllBtnPressed(btnClearAll)
+        GeneralViewController.variables.page3.clearAll(btnClearAll)
+    }
     @IBAction func Swiped(sender: UISwipeGestureRecognizer) {
         GeneralViewController.changeView(sender.direction.rawValue)
     }
