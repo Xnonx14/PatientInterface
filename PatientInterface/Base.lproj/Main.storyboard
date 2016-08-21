@@ -54,21 +54,21 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cR-Bb-0Dv">
-                                <rect key="frame" x="389" y="252" width="30" height="30"/>
+                                <rect key="frame" x="445" y="252" width="30" height="30"/>
                                 <state key="normal" title="DM"/>
                                 <connections>
                                     <action selector="btnPressedPMH:" destination="9pv-A4-QxB" eventType="touchUpInside" id="uO0-Zj-IWx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifz-Ga-Nbd">
-                                <rect key="frame" x="443" y="252" width="30" height="30"/>
+                                <rect key="frame" x="499" y="252" width="30" height="30"/>
                                 <state key="normal" title="HLD"/>
                                 <connections>
                                     <action selector="btnPressedPMH:" destination="9pv-A4-QxB" eventType="touchUpInside" id="PTH-MB-3Xt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-7x-3jh">
-                                <rect key="frame" x="494" y="252" width="37" height="30"/>
+                                <rect key="frame" x="550" y="252" width="37" height="30"/>
                                 <state key="normal" title="None"/>
                                 <connections>
                                     <action selector="pressNone:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vcG-vY-Mza"/>
@@ -87,6 +87,13 @@
                                     <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="OME-wn-giF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmN-V4-vcY">
+                                <rect key="frame" x="418" y="311" width="80" height="30"/>
+                                <state key="normal" title="Palpitations"/>
+                                <connections>
+                                    <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="2eF-Ff-DK5"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQa-XO-M8b">
                                 <rect key="frame" x="519" y="311" width="60" height="30"/>
                                 <state key="normal" title="Syncope"/>
@@ -102,7 +109,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAn-hG-HxD">
-                                <rect key="frame" x="317" y="252" width="67" height="30"/>
+                                <rect key="frame" x="389" y="252" width="35" height="30"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" selected="YES"/>
                                 </accessibility>
@@ -111,51 +118,68 @@
                                     <action selector="btnPressedPMH:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UAA-Nd-XBh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Grey means it is selected." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fw-uw-7sE">
-                                <rect key="frame" x="280" y="40" width="205" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Blue means it is selected." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fw-uw-7sE">
+                                <rect key="frame" x="283" y="91" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsE-ej-siP">
-                                <rect key="frame" x="20" y="937" width="57" height="30"/>
-                                <state key="normal" title="Clear All"/>
+                                <rect key="frame" x="20" y="20" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clearAll:" destination="9pv-A4-QxB" eventType="touchUpInside" id="GOg-Qw-6Ni"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8v-61-FSK">
-                                <rect key="frame" x="708" y="937" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="saveValues:" destination="9pv-A4-QxB" eventType="touchUpInside" id="TKa-Qq-ind"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW4-im-r6e">
+                                <rect key="frame" x="697" y="20" width="57" height="30"/>
+                                <state key="normal" title="Clear All"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmN-V4-vcY">
-                                <rect key="frame" x="418" y="311" width="80" height="30"/>
-                                <state key="normal" title="Palpitations"/>
-                                <connections>
-                                    <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="2eF-Ff-DK5"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7K-0W-Ozl">
+                                <rect key="frame" x="334" y="252" width="31" height="30"/>
+                                <state key="normal" title="CAD"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l3-Ld-e6P">
+                                <rect key="frame" x="595" y="311" width="64" height="30"/>
+                                <state key="normal" title="abnl ECG"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1hB-Dp-Jis" appends="YES" id="qfm-9K-UQh"/>
+                            <outletCollection property="gestureRecognizers" destination="s14-79-Idc" appends="YES" id="ydq-QB-F5P"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="1" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="barIcon" destination="acW-dT-cKf" id="M2f-Ka-qwR"/>
+                        <outlet property="btnCP" destination="h66-sy-4mb" id="0tC-q6-nwv"/>
                         <outlet property="btnClearAll" destination="lsE-ej-siP" id="8ny-yL-mYk"/>
                         <outlet property="btnDM" destination="3cR-Bb-0Dv" id="8Vs-DA-GZU"/>
                         <outlet property="btnHLD" destination="ifz-Ga-Nbd" id="DZe-IN-WIc"/>
                         <outlet property="btnHTN" destination="UAn-hG-HxD" id="DTM-l8-1I1"/>
                         <outlet property="btnNone" destination="u7K-7x-3jh" id="VIe-kK-NVV"/>
+                        <outlet property="btnPalps" destination="mmN-V4-vcY" id="qQL-2I-kf4"/>
+                        <outlet property="btnSB" destination="kef-Uc-faJ" id="o44-Qh-rEg"/>
+                        <outlet property="btnSync" destination="EQa-XO-M8b" id="AdB-m3-hlb"/>
                         <outlet property="switchGender" destination="HxE-wW-DOy" id="6NS-zN-ALK"/>
                         <outlet property="tfAge" destination="62l-lN-D0c" id="OJO-KH-4Ca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="1hB-Dp-Jis">
+                    <connections>
+                        <action selector="Swiped:" destination="9pv-A4-QxB" id="FrU-F8-OTn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="s14-79-Idc">
+                    <connections>
+                        <action selector="Swiped:" destination="9pv-A4-QxB" id="dFT-pD-QEo"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-239" y="301"/>
+            <point key="canvasLocation" x="-496" y="-361"/>
         </scene>
         <!--2-->
         <scene sceneID="wg7-f3-ORb">
@@ -170,134 +194,329 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exertion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6c-XC-XUv">
-                                <rect key="frame" x="200" y="451" width="63" height="21"/>
+                                <rect key="frame" x="172" y="392" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tenderness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raf-ih-aBO">
-                                <rect key="frame" x="173" y="550" width="90" height="21"/>
+                                <rect key="frame" x="145" y="491" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pleuritic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uP-7e-kEY">
-                                <rect key="frame" x="201" y="499" width="62" height="21"/>
+                                <rect key="frame" x="173" y="440" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZTZ-yM-qEF">
-                                <rect key="frame" x="307" y="444" width="346" height="29"/>
+                                <rect key="frame" x="279" y="385" width="346" height="29"/>
                                 <segments>
                                     <segment title="Default"/>
                                     <segment title="Worse"/>
                                     <segment title="Not Related"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="DR1-CW-ygU"/>
+                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S2l-m1-Ty2">
-                                <rect key="frame" x="229" y="198" width="424" height="29"/>
+                                <rect key="frame" x="173" y="198" width="424" height="29"/>
                                 <segments>
+                                    <segment title="Default"/>
                                     <segment title="Hours"/>
                                     <segment title="Days"/>
                                     <segment title="Weeks"/>
                                     <segment title="Years"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="z5n-Ev-3X2"/>
+                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8kd-V7-2Uh">
-                                <rect key="frame" x="307" y="492" width="346" height="29"/>
+                                <rect key="frame" x="279" y="433" width="346" height="29"/>
                                 <segments>
                                     <segment title="Default"/>
                                     <segment title="Worse"/>
                                     <segment title="Not Related"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="qUj-at-hxe"/>
+                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7i0-T6-JAe">
-                                <rect key="frame" x="307" y="543" width="346" height="29"/>
+                                <rect key="frame" x="279" y="484" width="346" height="29"/>
                                 <segments>
                                     <segment title="Default"/>
                                     <segment title="Tender"/>
                                     <segment title="Non-Tender"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="76P-eo-vFk"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNx-sv-qyH">
-                                <rect key="frame" x="217" y="604" width="46" height="21"/>
+                                <rect key="frame" x="189" y="545" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RH4-TX-514">
-                                <rect key="frame" x="307" y="597" width="346" height="29"/>
+                                <rect key="frame" x="279" y="538" width="346" height="29"/>
                                 <segments>
                                     <segment title="Default"/>
                                     <segment title="Worse"/>
-                                    <segment title="Not Worse"/>
+                                    <segment title="Not Related"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="geQ-1S-lXT"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNM-bv-Cbs">
-                                <rect key="frame" x="119" y="253" width="66" height="21"/>
+                                <rect key="frame" x="90" y="250" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j4f-Px-4tC">
-                                <rect key="frame" x="229" y="250" width="424" height="29"/>
+                                <rect key="frame" x="173" y="247" width="521" height="29"/>
                                 <segments>
-                                    <segment title="Subternal"/>
-                                    <segment title="Left Sided"/>
-                                    <segment title="Right Sided"/>
+                                    <segment title="Default"/>
+                                    <segment title="Substernal"/>
+                                    <segment title="Left-Sided"/>
+                                    <segment title="Right-Sided"/>
                                     <segment title="Upper"/>
                                     <segment title="Lower"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="WkO-h2-uRK"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pain Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Y6-9K-WAF">
-                                <rect key="frame" x="82" y="305" width="103" height="21"/>
+                                <rect key="frame" x="81" y="604" width="103" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FIQ-QT-Oeo">
-                                <rect key="frame" x="229" y="302" width="424" height="29"/>
+                                <rect key="frame" x="201" y="601" width="424" height="29"/>
                                 <segments>
+                                    <segment title="Default"/>
                                     <segment title="Seconds"/>
                                     <segment title="Minutes"/>
                                     <segment title="Hours"/>
                                     <segment title="Days"/>
                                 </segments>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGx-1R-sjv">
-                                <rect key="frame" x="20" y="937" width="57" height="30"/>
-                                <state key="normal" title="Clear All"/>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="En2-9x-mt9">
-                                <rect key="frame" x="229" y="356" width="432" height="29"/>
-                                <segments>
-                                    <segment title="Tightness"/>
-                                    <segment title="Sharp"/>
-                                    <segment title="Fullness"/>
-                                    <segment title="Vague in nature"/>
-                                </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="YLd-NW-fVK"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Period of Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7v-I3-oMb">
-                                <rect key="frame" x="73" y="201" width="112" height="21"/>
+                                <rect key="frame" x="44" y="198" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIn-Dq-az2">
-                                <rect key="frame" x="131" y="359" width="54" height="21"/>
+                                <rect key="frame" x="102" y="296" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="En2-9x-mt9">
+                                <rect key="frame" x="173" y="293" width="511" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Tightness"/>
+                                    <segment title="Sharp"/>
+                                    <segment title="Fullness"/>
+                                    <segment title="Vague in nature"/>
+                                </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="aUl-df-Xsq"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chest Pain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGO-Px-n71">
+                                <rect key="frame" x="344" y="22" width="82" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-wX-K55">
+                                <rect key="frame" x="173" y="87" width="424" height="29"/>
+                                <segments>
+                                    <segment title="Default (Has Chest Pain)"/>
+                                    <segment title="No Chest Pain"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGx-1R-sjv">
+                                <rect key="frame" x="20" y="20" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearAllBtnPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="GV7-j2-UU1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="o3m-rG-hwP" appends="YES" id="rZh-nH-MpZ"/>
+                            <outletCollection property="gestureRecognizers" destination="hEC-3L-wGn" appends="YES" id="GwR-Ac-roc"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="2" image="first" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="barLabel" destination="cPa-gy-q4n" id="lCu-es-ane"/>
+                        <outlet property="chestPain" destination="tZo-wX-K55" id="jqs-ZB-Pas"/>
+                        <outlet property="duration" destination="FIQ-QT-Oeo" id="XMz-GW-yt1"/>
+                        <outlet property="exertion" destination="ZTZ-yM-qEF" id="wav-xM-3Yc"/>
+                        <outlet property="locationSegment" destination="j4f-Px-4tC" id="Zhb-TN-apc"/>
+                        <outlet property="meals" destination="RH4-TX-514" id="Ywc-fO-aha"/>
+                        <outlet property="pleuritic" destination="8kd-V7-2Uh" id="gyk-E5-But"/>
+                        <outlet property="quality" destination="En2-9x-mt9" id="Tyk-5n-9SU"/>
+                        <outlet property="tenderness" destination="7i0-T6-JAe" id="NG3-Ci-lPu"/>
+                        <outlet property="timeSegment" destination="S2l-m1-Ty2" id="y2M-rt-p4E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="o3m-rG-hwP">
+                    <connections>
+                        <action selector="Swiped:" destination="8rJ-Kc-sve" id="fpH-97-afn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="hEC-3L-wGn">
+                    <connections>
+                        <action selector="Swiped:" destination="8rJ-Kc-sve" id="2Yr-It-IFN"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="575" y="301"/>
+            <point key="canvasLocation" x="318" y="-361"/>
+        </scene>
+        <!--Send Mail 2-->
+        <scene sceneID="rU8-GL-edK">
+            <objects>
+                <viewController title="Send Mail 2" id="woH-rj-Pom" customClass="Page5ViewController" customModule="PatientInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v8A-zg-4Ry"/>
+                        <viewControllerLayoutGuide type="bottom" id="zLm-Uy-Psa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ys1-ox-S8d">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2uV-IB-sm4">
+                                <rect key="frame" x="270" y="141" width="229" height="29"/>
+                                <segments>
+                                    <segment title="Please Schedule"/>
+                                    <segment title="Please Obtain"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ToQ-eZ-3zm">
+                                <rect key="frame" x="136" y="373" width="496" height="29"/>
+                                <segments>
+                                    <segment title="CP"/>
+                                    <segment title="SOB"/>
+                                    <segment title="Palps"/>
+                                    <segment title="Abnl ECG"/>
+                                    <segment title="Syncope"/>
+                                    <segment title="CAD"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOx-Ch-e4x">
+                                <rect key="frame" x="235" y="579" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RA-7T-vzR">
+                                <rect key="frame" x="174" y="144" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NmF-N3-TTd">
+                                <rect key="frame" x="341" y="575" width="121" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mNW-wL-nI3">
+                                <rect key="frame" x="136" y="297" width="496" height="29"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g3q-aL-7bh">
+                                <rect key="frame" x="136" y="220" width="496" height="29"/>
+                                <segments>
+                                    <segment title="Stress Echo" width="83"/>
+                                    <segment title="Echo" width="47"/>
+                                    <segment title="Auth for Stress Echo" width="129"/>
+                                    <segment title="Auth for Echo" width="93"/>
+                                    <segment title="Auth for Echo + STR" width="140"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVm-hO-HrV">
+                                <rect key="frame" x="350" y="659" width="68" height="30"/>
+                                <state key="normal" title="Send Mail"/>
+                                <connections>
+                                    <action selector="sendEmailButtonTapped:" destination="woH-rj-Pom" eventType="touchUpInside" id="vh8-fj-qfM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgW-rX-uBH">
+                                <rect key="frame" x="58" y="300" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diagnosis:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0X7-K8-B6D">
+                                <rect key="frame" x="27" y="376" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH2-aF-EpB">
+                                <rect key="frame" x="25" y="20" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1Mh-um-1xb" appends="YES" id="ueT-G1-aTb"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Send Mail 2" image="first" id="1XB-P5-yHx"/>
+                    <connections>
+                        <outlet property="seg1" destination="2uV-IB-sm4" id="FlM-wf-Zg9"/>
+                        <outlet property="seg2" destination="g3q-aL-7bh" id="gYZ-7F-vsa"/>
+                        <outlet property="seg3" destination="ToQ-eZ-3zm" id="INS-bp-hHg"/>
+                        <outlet property="seg4" destination="mNW-wL-nI3" id="eOR-c6-Nlf"/>
+                        <outlet property="tfName" destination="NmF-N3-TTd" id="pIX-xr-cvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHo-1T-zA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="RRc-F9-fLq">
+                    <connections>
+                        <action selector="Swiped:" destination="woH-rj-Pom" id="qfG-U9-EiE"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="1Mh-um-1xb">
+                    <connections>
+                        <action selector="Swiped:" destination="woH-rj-Pom" id="5cR-WH-EFf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2811" y="-361"/>
         </scene>
         <!--Send Mail-->
         <scene sceneID="8Rp-W1-OuI">
@@ -318,19 +537,60 @@
                                     <action selector="sendEmailButtonTapped:" destination="2YD-Mq-eP6" eventType="touchUpInside" id="WXG-kD-uIZ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CtV-cO-NVb">
+                                <rect key="frame" x="267" y="325" width="308" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRX-pr-WtN">
+                                <rect key="frame" x="267" y="379" width="308" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caH-sC-1KJ">
+                                <rect key="frame" x="200" y="383" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5e-Zh-o4h">
+                                <rect key="frame" x="218" y="329" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Gov-3I-PeH" appends="YES" id="Uk3-I9-z8u"/>
+                            <outletCollection property="gestureRecognizers" destination="Oyo-5y-Bkz" appends="YES" id="ElG-Eg-pPI"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Send Mail" image="second" id="E5v-vI-P9b"/>
+                    <connections>
+                        <outlet property="mailAddress" destination="CtV-cO-NVb" id="36F-Xx-AQs"/>
+                        <outlet property="subjectTF" destination="VRX-pr-WtN" id="cj2-Fn-NUa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6WU-bt-lk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Gov-3I-PeH">
+                    <connections>
+                        <action selector="Swiped:" destination="2YD-Mq-eP6" id="xdp-5C-bF4"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Oyo-5y-Bkz">
+                    <connections>
+                        <action selector="Swiped:" destination="2YD-Mq-eP6" id="FnU-DJ-f1D"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2201" y="301"/>
+            <point key="canvasLocation" x="1982" y="-361"/>
         </scene>
-        <!--Page 3-->
+        <!--3-->
         <scene sceneID="JI9-bk-uh3">
             <objects>
-                <viewController title="Page 3" id="BlQ-TH-gz3" sceneMemberID="viewController">
+                <viewController title="3" id="BlQ-TH-gz3" customClass="Page3ViewController" customModule="PatientInterface" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q2l-t0-orx"/>
                         <viewControllerLayoutGuide type="bottom" id="sNm-Gf-EP9"/>
@@ -338,18 +598,175 @@
                     <view key="view" contentMode="scaleToFill" id="8YH-p7-50U">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fe0-X4-luK">
+                                <rect key="frame" x="167" y="103" width="495" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="No SOB"/>
+                                    <segment title="With Exertion"/>
+                                    <segment title="At Rest"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changed:" destination="BlQ-TH-gz3" eventType="valueChanged" id="2f4-GX-qhh"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tyK-cg-OZY">
+                                <rect key="frame" x="167" y="158" width="495" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Days"/>
+                                    <segment title="Weeks"/>
+                                    <segment title="Months"/>
+                                    <segment title="Years"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changed:" destination="BlQ-TH-gz3" eventType="valueChanged" id="dgz-Hq-dAM"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1li-zY-mJi">
+                                <rect key="frame" x="295" y="357" width="370" height="29"/>
+                                <segments>
+                                    <segment title="Default(Yes Palps)"/>
+                                    <segment title="No Palps"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changed:" destination="BlQ-TH-gz3" eventType="valueChanged" id="Naf-CE-hyi"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgw-MC-Z5o">
+                                <rect key="frame" x="37" y="106" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOB Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oc-SB-AJU">
+                                <rect key="frame" x="37" y="161" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Palpitations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be6-hm-xr6">
+                                <rect key="frame" x="186" y="360" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Palps Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c26-vf-vxo">
+                                <rect key="frame" x="163" y="557" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Q69-BF-q6T">
+                                <rect key="frame" x="295" y="448" width="370" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="With Exertion"/>
+                                    <segment title="At Rest"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changed:" destination="BlQ-TH-gz3" eventType="valueChanged" id="ifo-9C-ASs"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fiP-dY-sHy">
+                                <rect key="frame" x="293" y="554" width="372" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Seconds"/>
+                                    <segment title="Minutes"/>
+                                    <segment title="Hours"/>
+                                    <segment title="Days"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changed:" destination="BlQ-TH-gz3" eventType="valueChanged" id="o0g-pL-1I2"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzE-jO-Zhz">
+                                <rect key="frame" x="20" y="20" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearAll:" destination="BlQ-TH-gz3" eventType="touchUpInside" id="fsh-2l-AYM"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-Df-hhe">
+                                <rect key="frame" x="295" y="402" width="370" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Fast"/>
+                                    <segment title="Strong(Not Fast)"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changed:" destination="BlQ-TH-gz3" eventType="valueChanged" id="oJn-wC-kPd"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dUI-rH-BJr">
+                                <rect key="frame" x="295" y="496" width="370" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Regular"/>
+                                    <segment title="Irregular"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changed:" destination="BlQ-TH-gz3" eventType="valueChanged" id="IvX-WH-FNK"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1nF-uV-ZNq">
+                                <rect key="frame" x="293" y="673" width="372" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Syncope"/>
+                                    <segment title="No Syncope"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changed:" destination="BlQ-TH-gz3" eventType="valueChanged" id="S0S-uw-c5Q"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Syncope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GK8-K0-iqO">
+                                <rect key="frame" x="208" y="676" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jcM-gV-qJn" appends="YES" id="3ra-9f-CxD"/>
+                            <outletCollection property="gestureRecognizers" destination="o88-LR-dA2" appends="YES" id="Ucj-nI-U8T"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="3" image="first" id="4WT-B0-yuq"/>
+                    <connections>
+                        <outlet property="Palpitations1" destination="1li-zY-mJi" id="NK5-7C-agG"/>
+                        <outlet property="Palpitations2" destination="S6r-Df-hhe" id="TdK-HJ-j3i"/>
+                        <outlet property="Palpitations3" destination="Q69-BF-q6T" id="5sH-GS-wlU"/>
+                        <outlet property="Palpitations4" destination="dUI-rH-BJr" id="geZ-1p-hYj"/>
+                        <outlet property="PalpsDuration" destination="fiP-dY-sHy" id="KIG-rz-RJp"/>
+                        <outlet property="SOB" destination="Fe0-X4-luK" id="g26-QL-mqX"/>
+                        <outlet property="SOBDur" destination="tyK-cg-OZY" id="5BJ-YH-rZc"/>
+                        <outlet property="barLabel" destination="4WT-B0-yuq" id="rfR-Bb-A2F"/>
+                        <outlet property="syncope" destination="1nF-uV-ZNq" id="s6G-kW-vOq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfb-76-hd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="jcM-gV-qJn">
+                    <connections>
+                        <action selector="Swiped:" destination="BlQ-TH-gz3" id="QH8-L6-bCH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="o88-LR-dA2">
+                    <connections>
+                        <action selector="Swiped:" destination="BlQ-TH-gz3" id="2NE-pF-lD3"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1380" y="301"/>
+            <point key="canvasLocation" x="1123" y="-361"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--General View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="GeneralViewController" customModule="PatientInterface" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -362,11 +779,12 @@
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="BlQ-TH-gz3" kind="relationship" relationship="viewControllers" id="sCc-gg-bbM"/>
                         <segue destination="2YD-Mq-eP6" kind="relationship" relationship="viewControllers" id="CIL-We-RbA"/>
+                        <segue destination="woH-rj-Pom" kind="relationship" relationship="viewControllers" id="1OE-5X-CZG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="-898"/>
+            <point key="canvasLocation" x="634" y="-1560"/>
         </scene>
     </scenes>
     <resources>

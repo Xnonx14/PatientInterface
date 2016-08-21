@@ -10,6 +10,9 @@
 		8A25A5741D665FDC000CC88A /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25A5731D665FDC000CC88A /* Page2ViewController.swift */; };
 		8A25A5761D66602B000CC88A /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25A5751D66602B000CC88A /* MailViewController.swift */; };
 		8A25A5781D6660A0000CC88A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25A5771D6660A0000CC88A /* MessageUI.framework */; };
+		8A8C61BB1D66C3C0007CDB38 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C61BA1D66C3C0007CDB38 /* GeneralViewController.swift */; };
+		8A8C61BD1D66DDCA007CDB38 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C61BC1D66DDC9007CDB38 /* Page3ViewController.swift */; };
+		8A8C61BF1D6963AD007CDB38 /* Page5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C61BE1D6963AD007CDB38 /* Page5ViewController.swift */; };
 		8ADC63721D5304E000DBFAE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC63711D5304E000DBFAE9 /* AppDelegate.swift */; };
 		8ADC63741D5304E000DBFAE9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC63731D5304E000DBFAE9 /* FirstViewController.swift */; };
 		8ADC63791D5304E100DBFAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC63771D5304E100DBFAE9 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 		8A25A5731D665FDC000CC88A /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		8A25A5751D66602B000CC88A /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		8A25A5771D6660A0000CC88A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8A8C61BA1D66C3C0007CDB38 /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		8A8C61BC1D66DDC9007CDB38 /* Page3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
+		8A8C61BE1D6963AD007CDB38 /* Page5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page5ViewController.swift; sourceTree = "<group>"; };
 		8ADC636E1D5304DF00DBFAE9 /* PatientInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADC63711D5304E000DBFAE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ADC63731D5304E000DBFAE9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 				8ADC637F1D5304E100DBFAE9 /* Info.plist */,
 				8A25A5731D665FDC000CC88A /* Page2ViewController.swift */,
 				8A25A5751D66602B000CC88A /* MailViewController.swift */,
+				8A8C61BA1D66C3C0007CDB38 /* GeneralViewController.swift */,
+				8A8C61BC1D66DDC9007CDB38 /* Page3ViewController.swift */,
+				8A8C61BE1D6963AD007CDB38 /* Page5ViewController.swift */,
 			);
 			path = PatientInterface;
 			sourceTree = "<group>";
@@ -147,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADC63721D5304E000DBFAE9 /* AppDelegate.swift in Sources */,
+				8A8C61BF1D6963AD007CDB38 /* Page5ViewController.swift in Sources */,
+				8A8C61BD1D66DDCA007CDB38 /* Page3ViewController.swift in Sources */,
 				8A25A5761D66602B000CC88A /* MailViewController.swift in Sources */,
+				8A8C61BB1D66C3C0007CDB38 /* GeneralViewController.swift in Sources */,
 				8A25A5741D665FDC000CC88A /* Page2ViewController.swift in Sources */,
 				8ADC63741D5304E000DBFAE9 /* FirstViewController.swift in Sources */,
 			);

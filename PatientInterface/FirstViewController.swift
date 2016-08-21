@@ -9,8 +9,8 @@
 import UIKit
 
 class FirstViewController: UIViewController, UITextFieldDelegate {
-    var defaultColor: UIColor!
-    var selectedColor = UIColor.lightGrayColor()
+    var defaultColor = UIColor.lightGrayColor()
+    var selectedColor: UIColor!
     var list = Array<UIButton>();
     var list2 = Array<UIButton>();
     @IBOutlet weak var switchGender: UISegmentedControl!
@@ -19,15 +19,30 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnDM: UIButton!
     @IBOutlet weak var btnHLD: UIButton!
     @IBOutlet weak var btnNone: UIButton!
+    @IBOutlet weak var btnSB: UIButton!
     @IBOutlet weak var btnClearAll: UIButton!
+    @IBOutlet weak var btnPalps: UIButton!
+    @IBOutlet weak var btnSync: UIButton!
+    @IBOutlet weak var btnCP: UIButton!
     struct variables{
+        static var myController:FirstViewController!
         static var paragraph = "Default Text";
+        static var gender = "he"
+        static var tabChanged = false
     }
     @IBAction func SegmentChanged(sender: UISegmentedControl) {
+        edited()
+        
+    }
+    @IBAction func Swiped(sender: UISwipeGestureRecognizer) {
+        GeneralViewController.changeView(sender.direction.rawValue)
+    }
+    func edited(){
         barIcon.title = "1"
+        GeneralViewController.prevent()
     }
     @IBAction func AgeChanged(sender: UITextField) {
-        barIcon.title = "1"
+        edited();
     }
     @IBAction func clearAll(sender: UIButton) {
         deselectAllButtons();
@@ -36,7 +51,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         tfAge.text = "";
         switchGender.selectedSegmentIndex = 0;
         btnNone.setTitleColor(selectedColor, forState: UIControlState.Normal)
-        barIcon.title = "1"
+        edited();
     }
     @IBAction func pressNone(sender: UIButton) {
         if(sender.currentTitleColor != defaultColor){
@@ -46,8 +61,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         btnDM.setTitleColor(defaultColor, forState: UIControlState.Normal)
         btnHLD.setTitleColor(defaultColor, forState: UIControlState.Normal)
         list.removeAll()
-        sender.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal)
-        barIcon.title = "1"
+        sender.setTitleColor(selectedColor, forState: UIControlState.Normal)
+        edited()
     }
     
     func registerButtonPMH(btn: UIButton){
@@ -55,6 +70,9 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             list.removeAtIndex(list.indexOf(btn)!)
         }else{
             list.append(btn);
+        }
+        if(list.isEmpty){
+            btnNone.setTitleColor(selectedColor, forState: UIControlState.Normal)
         }
     }
     func registerButtonCC(btn: UIButton){
@@ -75,12 +93,13 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         }
     }
     @IBOutlet weak var barIcon: UITabBarItem!
-    @IBAction func saveValues(sender: UIButton) {
+    func save(){
         barIcon.title = "1 (saved)"
+        GeneralViewController.proceed()
         var p1 = tfAge.text!+"-year-old "+switchGender.titleForSegmentAtIndex(switchGender.selectedSegmentIndex)!.lowercaseString + " with ";
         var combo1 = "";
         if(btnNone.currentTitleColor != defaultColor){
-            combo1 = "no significant Personal Medical History"//if its selected
+            combo1 = "no significant PMH"//if its selected
         }else if(btnHLD.currentTitleColor == btnDM.currentTitleColor && btnHTN.currentTitleColor == btnHLD.currentTitleColor && btnHLD != defaultColor){
             combo1 = "HTN, DM and HLD"
         }else if(btnHTN.currentTitleColor == btnDM.currentTitleColor && btnHTN.currentTitleColor == selectedColor){ //combination of 2 words
@@ -110,42 +129,64 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         }
         var combined2 = "";
         for u in 0..<combo2.count{
-            print("value: "+combo2[u])
             combined2 = combined2.stringByAppendingString(combo2[u])
         }
         combined2 = combined2.lowercaseString
         //
         //combo2 = "Chest Pain, Shortness of Breath, Palpitations, and Syncope"
         variables.paragraph = p1 + combo1 + " presents for evaluation of " + combined2;
+        
+        if(switchGender.selectedSegmentIndex == 0){
+            variables.gender = "he"
+        }else if(switchGender.selectedSegmentIndex == 1){
+            variables.gender = "she"
+        }
+
     }
+    @IBAction func saveValues(sender: UIButton) {
+        save()
+        }
     @IBAction func btnPressedPMH(sender: UIButton) {
-        barIcon.title = "1"
+        edited()
         registerButtonPMH(sender);
         if(sender.currentTitleColor != defaultColor){
             sender.setTitleColor(defaultColor, forState: UIControlState.Normal)
         }else{
-            sender.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal)
+            sender.setTitleColor(selectedColor, forState: UIControlState.Normal)
             if(sender != btnNone && (btnHTN==sender || btnDM == sender || btnHLD == sender)){
                 btnNone.setTitleColor(defaultColor, forState: UIControlState.Normal)
             }
         }
     }
+    
     @IBAction func btnPressedCC(sender: UIButton) {
-        barIcon.title = "1"
+        edited()
         registerButtonCC(sender);
         if(sender.currentTitleColor != defaultColor){
             sender.setTitleColor(defaultColor, forState: UIControlState.Normal)
         }else{
-            sender.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal)
+            sender.setTitleColor(selectedColor, forState: UIControlState.Normal)
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(selectedColor==nil){
+            selectedColor = btnHTN.currentTitleColor;
+        }
+        //make all buttons in default state
+        btnHTN.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnDM.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnHLD.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnCP.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnSB.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnPalps.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnSync.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        
+        
+        variables.myController = self
         btnNone.setTitleColor(selectedColor, forState: UIControlState.Normal)
         tfAge.keyboardType = UIKeyboardType.NumberPad;
-        if(defaultColor==nil){
-            defaultColor = btnHTN.currentTitleColor;
-        }
+        
         
         self.tfAge.delegate = self;
     }
