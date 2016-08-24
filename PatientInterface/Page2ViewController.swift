@@ -150,13 +150,15 @@ class Page2ViewController: UIViewController {
                 combo1 = combo1 + " and "
             }else if(size != 1 && duration.selectedSegmentIndex != 0){
                 combo1 = combo1 + ", "
+            }else if(size == 1){
+                combo1 += " "
             }
             
         }
         
         var dura:String = (duration.titleForSegmentAtIndex(duration.selectedSegmentIndex)?.lowercaseString)!
         if(dura != "default"){
-            dura = "lasting for " + dura
+            dura = "lasting " + dura
         }else{
             dura = ""
         }

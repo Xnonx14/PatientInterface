@@ -31,11 +31,19 @@ class GeneralViewController: UITabBarController, UITabBarControllerDelegate{
         variables.page5 = variables.pages![4] as? Page5ViewController
     }
     static func changeView(val: UInt){
-        //print(val)
-        if(val == 1){
+        print("swipe")
+        print(val)
+        print(variables.myController.selectedIndex)
+        print(variables.pages!.count - 1)
+        if(val == 2 && variables.myController.selectedIndex == (variables.pages!.count - 1)){
+            variables.myController.selectedIndex = 0
+        }else if(val == 1 && variables.myController.selectedIndex == 0){
+            variables.myController.selectedIndex = variables.pages!.count - 1
+        }
+        else if(val == 1){ // go left
             variables.myController.selectedIndex -= 1
         }
-        if(val == 2){
+        else if(val == 2){ // go right
             variables.myController.selectedIndex += 1
         }
         

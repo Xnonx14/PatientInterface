@@ -75,35 +75,35 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpL-1T-DBW">
-                                <rect key="frame" x="123" y="315" width="24" height="21"/>
+                                <rect key="frame" x="36" y="322" width="24" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h66-sy-4mb">
-                                <rect key="frame" x="173" y="311" width="74" height="30"/>
+                                <rect key="frame" x="86" y="318" width="74" height="30"/>
                                 <state key="normal" title="Chest Pain"/>
                                 <connections>
                                     <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="OME-wn-giF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmN-V4-vcY">
-                                <rect key="frame" x="418" y="311" width="80" height="30"/>
+                                <rect key="frame" x="239" y="318" width="80" height="30"/>
                                 <state key="normal" title="Palpitations"/>
                                 <connections>
                                     <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="2eF-Ff-DK5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQa-XO-M8b">
-                                <rect key="frame" x="519" y="311" width="60" height="30"/>
+                                <rect key="frame" x="340" y="318" width="60" height="30"/>
                                 <state key="normal" title="Syncope"/>
                                 <connections>
                                     <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xE0-0k-nkR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kef-Uc-faJ">
-                                <rect key="frame" x="265" y="311" width="137" height="30"/>
-                                <state key="normal" title="Shortness of Breath"/>
+                                <rect key="frame" x="184" y="318" width="31" height="30"/>
+                                <state key="normal" title="SOB"/>
                                 <connections>
                                     <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="bld-6l-aex"/>
                                 </connections>
@@ -141,10 +141,30 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7K-0W-Ozl">
                                 <rect key="frame" x="334" y="252" width="31" height="30"/>
                                 <state key="normal" title="CAD"/>
+                                <connections>
+                                    <action selector="btnPressedPMH:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xKH-il-IqP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiT-yP-MbL">
+                                <rect key="frame" x="512" y="318" width="66" height="30"/>
+                                <state key="normal" title="Dizziness"/>
+                                <connections>
+                                    <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="35U-4v-VYd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bte-3N-EjM">
+                                <rect key="frame" x="593" y="318" width="54" height="30"/>
+                                <state key="normal" title="Murmur"/>
+                                <connections>
+                                    <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="0aq-r8-XjI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l3-Ld-e6P">
-                                <rect key="frame" x="595" y="311" width="64" height="30"/>
+                                <rect key="frame" x="422" y="318" width="64" height="30"/>
                                 <state key="normal" title="abnl ECG"/>
+                                <connections>
+                                    <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="8ns-lm-v4Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -157,15 +177,19 @@
                     <tabBarItem key="tabBarItem" tag="1" title="1" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="barIcon" destination="acW-dT-cKf" id="M2f-Ka-qwR"/>
+                        <outlet property="btnCAD" destination="r7K-0W-Ozl" id="UCA-E6-mbL"/>
                         <outlet property="btnCP" destination="h66-sy-4mb" id="0tC-q6-nwv"/>
                         <outlet property="btnClearAll" destination="lsE-ej-siP" id="8ny-yL-mYk"/>
                         <outlet property="btnDM" destination="3cR-Bb-0Dv" id="8Vs-DA-GZU"/>
+                        <outlet property="btnECG" destination="1l3-Ld-e6P" id="aNh-Um-Xz0"/>
                         <outlet property="btnHLD" destination="ifz-Ga-Nbd" id="DZe-IN-WIc"/>
                         <outlet property="btnHTN" destination="UAn-hG-HxD" id="DTM-l8-1I1"/>
+                        <outlet property="btnMurmur" destination="bte-3N-EjM" id="mvl-Ui-4I7"/>
                         <outlet property="btnNone" destination="u7K-7x-3jh" id="VIe-kK-NVV"/>
                         <outlet property="btnPalps" destination="mmN-V4-vcY" id="qQL-2I-kf4"/>
                         <outlet property="btnSB" destination="kef-Uc-faJ" id="o44-Qh-rEg"/>
                         <outlet property="btnSync" destination="EQa-XO-M8b" id="AdB-m3-hlb"/>
+                        <outlet property="dizziness" destination="PiT-yP-MbL" id="c3S-FH-TJZ"/>
                         <outlet property="switchGender" destination="HxE-wW-DOy" id="6NS-zN-ALK"/>
                         <outlet property="tfAge" destination="62l-lN-D0c" id="OJO-KH-4Ca"/>
                     </connections>
@@ -232,6 +256,7 @@
                                     <segment title="Hours"/>
                                     <segment title="Days"/>
                                     <segment title="Weeks"/>
+                                    <segment title="Months"/>
                                     <segment title="Years"/>
                                 </segments>
                                 <connections>
@@ -353,6 +378,9 @@
                                     <segment title="Default (Has Chest Pain)"/>
                                     <segment title="No Chest Pain"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dataChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="c8l-xU-cTP"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGx-1R-sjv">
                                 <rect key="frame" x="20" y="20" width="36" height="30"/>
@@ -490,12 +518,34 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH2-aF-EpB">
                                 <rect key="frame" x="25" y="20" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearAll:" destination="woH-rj-Pom" eventType="touchUpInside" id="Sgk-7p-9Du"/>
+                                </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4wK-Rg-HwC">
+                                <rect key="frame" x="133" y="441" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HD9-Np-HbW">
+                                <rect key="frame" x="133" y="507" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cponce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfY-Qp-dWd">
+                                <rect key="frame" x="47" y="446" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bzhang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M71-AE-QLw">
+                                <rect key="frame" x="47" y="512" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="1Mh-um-1xb" appends="YES" id="ueT-G1-aTb"/>
+                            <outletCollection property="gestureRecognizers" destination="GMj-fh-Oo3" appends="YES" id="M7y-nG-maf"/>
+                            <outletCollection property="gestureRecognizers" destination="FEo-42-LCV" appends="YES" id="VJF-Mp-IlY"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Send Mail 2" image="first" id="1XB-P5-yHx"/>
@@ -504,18 +554,20 @@
                         <outlet property="seg2" destination="g3q-aL-7bh" id="gYZ-7F-vsa"/>
                         <outlet property="seg3" destination="ToQ-eZ-3zm" id="INS-bp-hHg"/>
                         <outlet property="seg4" destination="mNW-wL-nI3" id="eOR-c6-Nlf"/>
+                        <outlet property="switch1" destination="4wK-Rg-HwC" id="Sbm-78-ego"/>
+                        <outlet property="switch2" destination="HD9-Np-HbW" id="IHd-Xw-YeG"/>
                         <outlet property="tfName" destination="NmF-N3-TTd" id="pIX-xr-cvT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHo-1T-zA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="RRc-F9-fLq">
+                <swipeGestureRecognizer direction="left" id="GMj-fh-Oo3">
                     <connections>
-                        <action selector="Swiped:" destination="woH-rj-Pom" id="qfG-U9-EiE"/>
+                        <action selector="Swiped:" destination="woH-rj-Pom" id="4hB-hH-Am5"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="1Mh-um-1xb">
+                <swipeGestureRecognizer direction="right" id="FEo-42-LCV">
                     <connections>
-                        <action selector="Swiped:" destination="woH-rj-Pom" id="5cR-WH-EFf"/>
+                        <action selector="Swiped:" destination="woH-rj-Pom" id="tYc-jG-9en"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -628,9 +680,10 @@
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1li-zY-mJi">
-                                <rect key="frame" x="295" y="357" width="370" height="29"/>
+                                <rect key="frame" x="372" y="357" width="218" height="29"/>
                                 <segments>
-                                    <segment title="Default(Yes Palps)"/>
+                                    <segment title="Default"/>
+                                    <segment title="Yes Palps"/>
                                     <segment title="No Palps"/>
                                 </segments>
                                 <connections>

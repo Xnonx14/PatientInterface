@@ -24,6 +24,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnPalps: UIButton!
     @IBOutlet weak var btnSync: UIButton!
     @IBOutlet weak var btnCP: UIButton!
+    @IBOutlet weak var btnCAD: UIButton!
+    @IBOutlet weak var btnECG: UIButton!
     struct variables{
         static var myController:FirstViewController!
         static var paragraph = "Default Text";
@@ -65,6 +67,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         btnHTN.setTitleColor(defaultColor, forState: UIControlState.Normal)
         btnDM.setTitleColor(defaultColor, forState: UIControlState.Normal)
         btnHLD.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnCAD.setTitleColor(defaultColor, forState: UIControlState.Normal)
         list.removeAll()
         sender.setTitleColor(selectedColor, forState: UIControlState.Normal)
         edited()
@@ -103,22 +106,37 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         GeneralViewController.proceed()
         var p1 = tfAge.text!+"-year-old "+switchGender.titleForSegmentAtIndex(switchGender.selectedSegmentIndex)!.lowercaseString + " with ";
         var combo1 = "";
+        //Collect all buttons that are pushed (btnCAD, btnHTN, btnDM, btnHLD)
+        var tempList = Array<UIButton>()
+        if(list.contains(btnCAD)){
+            tempList.append(btnCAD)
+        }
+        if(list.contains(btnHTN)){
+            tempList.append(btnHTN)
+        }
+        if(list.contains(btnDM)){
+            tempList.append(btnDM)
+        }
+        if(list.contains(btnHLD)){
+            tempList.append(btnHLD)
+        }
+        list = tempList;
+        var temp = Array<String>()
+        for i in 0..<list.count{
+            temp.append(list[i].currentTitle!)
+            if(list.count == 1 || i == list.count - 1){
+                temp.append("")
+            }else if(i == list.count - 2){
+                temp.append(" and ")
+            }else{
+                temp.append(", ")
+            }
+        }
+        for i in 0..<temp.count{
+            combo1 += temp[i]
+        }
         if(btnNone.currentTitleColor != defaultColor){
             combo1 = "no significant PMH"//if its selected
-        }else if(btnHLD.currentTitleColor == btnDM.currentTitleColor && btnHTN.currentTitleColor == btnHLD.currentTitleColor && btnHLD != defaultColor){
-            combo1 = "HTN, DM and HLD"
-        }else if(btnHTN.currentTitleColor == btnDM.currentTitleColor && btnHTN.currentTitleColor == selectedColor){ //combination of 2 words
-            combo1 = "HTN and DM"
-        }else if(btnHTN.currentTitleColor == btnHLD.currentTitleColor && btnHTN.currentTitleColor == selectedColor){ //combination of 2 words
-            combo1 = "HTN and HLD"
-        }else if(btnDM.currentTitleColor == btnHLD.currentTitleColor && btnDM.currentTitleColor == selectedColor){ //combination of 2 words
-            combo1 = "DM and HLD"
-        }else if(btnHTN.currentTitleColor == selectedColor){ //one word
-            combo1 = "HTN"
-        }else if(btnDM.currentTitleColor == selectedColor){
-            combo1 = "DM"
-        }else if(btnHLD.currentTitleColor == selectedColor){
-            combo1 = "HLD"
         }
         //combination of 4 using combo2
         var combo2 = Array<String>();
@@ -134,9 +152,17 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         }
         var combined2 = "";
         for u in 0..<combo2.count{
-            combined2 = combined2.stringByAppendingString(combo2[u])
+            if(combo2[u].containsString("abnl ECG")){
+                combo2[u] = "abnormal ECG"
+                combined2 += combo2[u]
+            }else if(combo2[u].containsString("SOB")){
+                combo2[u] = "shortness of breath"
+                combined2 += combo2[u]
+            }else{
+                combined2 += combo2[u].lowercaseString
+            }
+            
         }
-        combined2 = combined2.lowercaseString
         //
         //combo2 = "Chest Pain, Shortness of Breath, Palpitations, and Syncope"
         variables.paragraph = p1 + combo1 + " presents for evaluation of " + combined2;
@@ -148,6 +174,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         }
 
     }
+    @IBOutlet weak var dizziness: UIButton!
     @IBAction func saveValues(sender: UIButton) {
         save()
         }
@@ -158,12 +185,11 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             sender.setTitleColor(defaultColor, forState: UIControlState.Normal)
         }else{
             sender.setTitleColor(selectedColor, forState: UIControlState.Normal)
-            if(sender != btnNone && (btnHTN==sender || btnDM == sender || btnHLD == sender)){
-                btnNone.setTitleColor(defaultColor, forState: UIControlState.Normal)
-            }
+            btnNone.setTitleColor(defaultColor, forState: UIControlState.Normal)
         }
     }
     
+    @IBOutlet weak var btnMurmur: UIButton!
     @IBAction func btnPressedCC(sender: UIButton) {
         edited()
         registerButtonCC(sender);
@@ -186,8 +212,10 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         btnSB.setTitleColor(defaultColor, forState: UIControlState.Normal)
         btnPalps.setTitleColor(defaultColor, forState: UIControlState.Normal)
         btnSync.setTitleColor(defaultColor, forState: UIControlState.Normal)
-        
-        
+        btnCAD.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnECG.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        dizziness.setTitleColor(defaultColor, forState: UIControlState.Normal)
+        btnMurmur.setTitleColor(defaultColor, forState: UIControlState.Normal)
         variables.myController = self
         btnNone.setTitleColor(selectedColor, forState: UIControlState.Normal)
         tfAge.keyboardType = UIKeyboardType.NumberPad;

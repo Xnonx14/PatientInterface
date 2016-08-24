@@ -127,8 +127,9 @@ class Page3ViewController: UIViewController {
             var p4 = ""
             var p5 = ""
             switch(a){
-            case 0: p1 = "Patient reports palpitations"
-            case 1: p1 = "Patient denies palpitations"
+            case 0: p1 = ""
+            case 1: p1 = "Patient reports palpitations"
+            case 2: p1 = "Patient denies palpitations"
             default: ""
             }
             switch(b){
