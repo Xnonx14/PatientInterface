@@ -16,7 +16,11 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
     @IBOutlet weak var seg4: UISegmentedControl!
     @IBOutlet weak var tfName: UITextField!
     @IBOutlet weak var switch1: UISwitch!
+    @IBOutlet weak var switch3: UISwitch!
+    @IBOutlet weak var switch4: UISwitch!
     @IBOutlet weak var switch2: UISwitch!
+    
+    
     var combinedBody = ""
     var subject = ""
     override func viewDidLoad() {
@@ -27,37 +31,37 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    @IBAction func Swiped(sender: UISwipeGestureRecognizer) {
+    @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {
         GeneralViewController.changeView(sender.direction.rawValue)
         
     }
-    @IBAction func sendEmailButtonTapped(sender: AnyObject) {
+    @IBAction func sendEmailButtonTapped(_ sender: AnyObject) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
-            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+            self.present(mailComposeViewController, animated: true, completion: nil)
         } else {
             self.showSendMailErrorAlert()
         }
     }
-    func textFieldShouldReturn(textField: UITextField)->Bool {
+    func textFieldShouldReturn(_ textField: UITextField)->Bool {
         self.view.endEditing(true);
         return false;
     }
-    @IBAction func clearAll(sender: UIButton) {
+    @IBAction func clearAll(_ sender: UIButton) {
         seg1.selectedSegmentIndex = 0
         seg2.selectedSegmentIndex = 0
         seg3.selectedSegmentIndex = 0
         seg4.selectedSegmentIndex = 0
-        switch1.on = true
-        switch2.on = true
+        switch1.isOn = true
+        switch2.isOn = true
         tfName.text = ""
     }
     func createBody(){
-        subject = seg1.titleForSegmentAtIndex(seg1.selectedSegmentIndex)!
-        var p1:String = seg2.titleForSegmentAtIndex(seg2.selectedSegmentIndex)!
-        var p2:String = seg3.titleForSegmentAtIndex(seg3.selectedSegmentIndex)!
-        var p3:String = seg4.titleForSegmentAtIndex(seg4.selectedSegmentIndex)!
-        var p4:String = tfName.text!
+        subject = seg1.titleForSegment(at: seg1.selectedSegmentIndex)!
+        let p1:String = seg2.titleForSegment(at: seg2.selectedSegmentIndex)!
+        let p2:String = seg3.titleForSegment(at: seg3.selectedSegmentIndex)!
+        let p3:String = seg4.titleForSegment(at: seg4.selectedSegmentIndex)!
+        let p4:String = tfName.text!
         combinedBody = p1 + " for patient in room " + p3 + ". \nDiagnosis is " + p2  + ". \nPatient last name is " + p4 + ". \nThanks!"
     }
     func configuredMailComposeViewController() -> MFMailComposeViewController {
@@ -66,11 +70,17 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
         createBody();
         
         var emails = Array<String>()
-        if(switch1.on){
+        if(switch1.isOn){
             emails.append("cponce@northwell.edu")
         }
-        if(switch2.on){
-            emails.append("bzhang3@northwell.edu")
+        if(switch2.isOn){
+             
+        }
+        if(switch3.isOn){
+            emails.append("tzhou1@northwell.edu")
+        }
+        if(switch4.isOn){
+            emails.append("wtong@northwell.edu")
         }
         emails.append("nchang@northwell.edu")
         mailComposerVC.setToRecipients(emails)
@@ -84,8 +94,8 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
         sendMailErrorAlert.show()
     }
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func mailComposeController(_ controller: MFMailComposeViewController!, didFinishWith result: MFMailComposeResult, error: Error!) {
+        controller.dismiss(animated: true, completion: nil)
         
     }
 

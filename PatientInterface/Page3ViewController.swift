@@ -34,20 +34,20 @@ class Page3ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func Swiped(sender: UISwipeGestureRecognizer) {
+    @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {
         GeneralViewController.changeView(sender.direction.rawValue)
     }
-    @IBAction func changed(sender: UISegmentedControl) {
+    @IBAction func changed(_ sender: UISegmentedControl) {
         if(!list.contains(sender)){
             list.append(sender)
         }
         if(sender.selectedSegmentIndex == 0){
-            list.removeAtIndex(list.indexOf(sender)!)
+            list.remove(at: list.index(of: sender)!)
         }
         barLabel.title = "3"
     }
-    @IBAction func clearAll(sender: UIButton) {
-        var size = list.count
+    @IBAction func clearAll(_ sender: UIButton) {
+        let size = list.count
         
         for i in 0..<size{
             list[i].selectedSegmentIndex = 0
@@ -80,7 +80,7 @@ class Page3ViewController: UIViewController {
             list2.append(SOBDur)
             
             //SOB sentence Formation
-            var c = list2[0].selectedSegmentIndex
+            let c = list2[0].selectedSegmentIndex
             var p1 = ""
             switch(c){
             case 1:
@@ -92,21 +92,21 @@ class Page3ViewController: UIViewController {
             default:
                 p1 = ""
             }
-            var d = list2[1].selectedSegmentIndex
+            let d = list2[1].selectedSegmentIndex
             var p2 = ""
             switch(d){
             case 1:
-                p2 = "for the past few days."
+                p2 = " for the past few days."
             case 2:
-                p2 = "for the past few weeks."
+                p2 = " for the past few weeks."
             case 3:
-                p2 = "for the past few months."
+                p2 = " for the past few months."
             case 4:
-                p2 = "for the past few years."
+                p2 = " for the past few years."
             default:
                 p2 = "."
             }
-            sentence1 = p1 + " " + p2
+            sentence1 = p1 + p2
         }
         var list3 = Array<UISegmentedControl>()
         if(!isAllPalpDefault()){
@@ -116,11 +116,11 @@ class Page3ViewController: UIViewController {
             list3.append(Palpitations4)
             list3.append(PalpsDuration)
             
-            var a = list3[0].selectedSegmentIndex
-            var b = list3[1].selectedSegmentIndex
-            var c = list3[2].selectedSegmentIndex
-            var d = list3[3].selectedSegmentIndex
-            var e = list3[4].selectedSegmentIndex
+            let a = list3[0].selectedSegmentIndex
+            let b = list3[1].selectedSegmentIndex
+            let c = list3[2].selectedSegmentIndex
+            let d = list3[3].selectedSegmentIndex
+            let e = list3[4].selectedSegmentIndex
             var p1 = ""
             var p2 = ""
             var p3 = ""
@@ -171,7 +171,7 @@ class Page3ViewController: UIViewController {
                 list4.append(p5)
             }
             var list5 = Array<String>()
-            var size = list4.count
+            let size = list4.count
             for i in 0..<size{
                 list5.append(list4[i])
                 if(i == size - 1){
@@ -180,7 +180,7 @@ class Page3ViewController: UIViewController {
                     list5.append(",")
                 }
             }
-            var size2 = list5.count
+            let size2 = list5.count
             for u in 0..<size2{
                 sentence2 += list5[u]
             }
@@ -188,7 +188,7 @@ class Page3ViewController: UIViewController {
         variables.paragraph = sentence1 + sentence2
         barLabel.title = "3 (saved)"
         
-        var f = syncope.selectedSegmentIndex
+        let f = syncope.selectedSegmentIndex
         var sentence3 = ""
         switch(f){
         case 1:

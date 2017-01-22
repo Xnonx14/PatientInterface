@@ -10,23 +10,34 @@
 		8A25A5741D665FDC000CC88A /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25A5731D665FDC000CC88A /* Page2ViewController.swift */; };
 		8A25A5761D66602B000CC88A /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25A5751D66602B000CC88A /* MailViewController.swift */; };
 		8A25A5781D6660A0000CC88A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25A5771D6660A0000CC88A /* MessageUI.framework */; };
+		8A7711381E159E4C00047CDB /* ReturningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7711371E159E4C00047CDB /* ReturningViewController.swift */; };
+		8A7D47D91E22602D008669A6 /* CPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D47D81E22602D008669A6 /* CPViewController.swift */; };
+		8A7D47DB1E22A51D008669A6 /* SOBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D47DA1E22A51D008669A6 /* SOBViewController.swift */; };
+		8A7D47DD1E22AA07008669A6 /* PalpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D47DC1E22AA07008669A6 /* PalpsViewController.swift */; };
 		8A8C61BB1D66C3C0007CDB38 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C61BA1D66C3C0007CDB38 /* GeneralViewController.swift */; };
 		8A8C61BD1D66DDCA007CDB38 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C61BC1D66DDC9007CDB38 /* Page3ViewController.swift */; };
 		8A8C61BF1D6963AD007CDB38 /* Page5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C61BE1D6963AD007CDB38 /* Page5ViewController.swift */; };
+		8AD5B1131E1B4679002D3C0B /* UIButtonWInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5B1121E1B4679002D3C0B /* UIButtonWInfo.swift */; };
 		8ADC63721D5304E000DBFAE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC63711D5304E000DBFAE9 /* AppDelegate.swift */; };
 		8ADC63741D5304E000DBFAE9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC63731D5304E000DBFAE9 /* FirstViewController.swift */; };
 		8ADC63791D5304E100DBFAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC63771D5304E100DBFAE9 /* Main.storyboard */; };
 		8ADC637B1D5304E100DBFAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC637A1D5304E100DBFAE9 /* Assets.xcassets */; };
 		8ADC637E1D5304E100DBFAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC637C1D5304E100DBFAE9 /* LaunchScreen.storyboard */; };
+		8AE3C3BB1E1FD712006141D1 /* CPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3C3BA1E1FD712006141D1 /* CPView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A25A5731D665FDC000CC88A /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		8A25A5751D66602B000CC88A /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		8A25A5771D6660A0000CC88A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8A7711371E159E4C00047CDB /* ReturningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturningViewController.swift; sourceTree = "<group>"; };
+		8A7D47D81E22602D008669A6 /* CPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPViewController.swift; sourceTree = "<group>"; };
+		8A7D47DA1E22A51D008669A6 /* SOBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOBViewController.swift; sourceTree = "<group>"; };
+		8A7D47DC1E22AA07008669A6 /* PalpsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalpsViewController.swift; sourceTree = "<group>"; };
 		8A8C61BA1D66C3C0007CDB38 /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		8A8C61BC1D66DDC9007CDB38 /* Page3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 		8A8C61BE1D6963AD007CDB38 /* Page5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page5ViewController.swift; sourceTree = "<group>"; };
+		8AD5B1121E1B4679002D3C0B /* UIButtonWInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonWInfo.swift; sourceTree = "<group>"; };
 		8ADC636E1D5304DF00DBFAE9 /* PatientInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADC63711D5304E000DBFAE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ADC63731D5304E000DBFAE9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +45,7 @@
 		8ADC637A1D5304E100DBFAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ADC637D1D5304E100DBFAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ADC637F1D5304E100DBFAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE3C3BA1E1FD712006141D1 /* CPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,12 @@
 				8A8C61BA1D66C3C0007CDB38 /* GeneralViewController.swift */,
 				8A8C61BC1D66DDC9007CDB38 /* Page3ViewController.swift */,
 				8A8C61BE1D6963AD007CDB38 /* Page5ViewController.swift */,
+				8A7711371E159E4C00047CDB /* ReturningViewController.swift */,
+				8AD5B1121E1B4679002D3C0B /* UIButtonWInfo.swift */,
+				8AE3C3BA1E1FD712006141D1 /* CPView.swift */,
+				8A7D47D81E22602D008669A6 /* CPViewController.swift */,
+				8A7D47DA1E22A51D008669A6 /* SOBViewController.swift */,
+				8A7D47DC1E22AA07008669A6 /* PalpsViewController.swift */,
 			);
 			path = PatientInterface;
 			sourceTree = "<group>";
@@ -116,6 +134,7 @@
 					8ADC636D1D5304DF00DBFAE9 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = RGY59AX98T;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -156,12 +175,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADC63721D5304E000DBFAE9 /* AppDelegate.swift in Sources */,
+				8A7D47DB1E22A51D008669A6 /* SOBViewController.swift in Sources */,
 				8A8C61BF1D6963AD007CDB38 /* Page5ViewController.swift in Sources */,
 				8A8C61BD1D66DDCA007CDB38 /* Page3ViewController.swift in Sources */,
+				8AE3C3BB1E1FD712006141D1 /* CPView.swift in Sources */,
 				8A25A5761D66602B000CC88A /* MailViewController.swift in Sources */,
 				8A8C61BB1D66C3C0007CDB38 /* GeneralViewController.swift in Sources */,
+				8A7711381E159E4C00047CDB /* ReturningViewController.swift in Sources */,
 				8A25A5741D665FDC000CC88A /* Page2ViewController.swift in Sources */,
 				8ADC63741D5304E000DBFAE9 /* FirstViewController.swift in Sources */,
+				8A7D47D91E22602D008669A6 /* CPViewController.swift in Sources */,
+				8A7D47DD1E22AA07008669A6 /* PalpsViewController.swift in Sources */,
+				8AD5B1131E1B4679002D3C0B /* UIButtonWInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,11 +301,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RGY59AX98T;
 				INFOPLIST_FILE = PatientInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KayGames.PatientInterface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -291,11 +318,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RGY59AX98T;
 				INFOPLIST_FILE = PatientInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KayGames.PatientInterface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

@@ -26,12 +26,12 @@ class Page2ViewController: UIViewController {
         static var myController: Page2ViewController!
         static var included:Bool = false
     }
-    @IBAction func Swiped(sender: UISwipeGestureRecognizer) {
+    @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {
         GeneralViewController.changeView(sender.direction.rawValue)
     }
     
-    @IBAction func clearAllBtnPressed(sender: UIButton) {
-        var size = segList.count
+    @IBAction func clearAllBtnPressed(_ sender: UIButton) {
+        let size = segList.count
         for i in 0..<size{
             segList[i].selectedSegmentIndex = 0
         }
@@ -50,19 +50,19 @@ class Page2ViewController: UIViewController {
         if(timeSegment == nil){
             return
         }
-        var time: String = (timeSegment.titleForSegmentAtIndex(timeSegment.selectedSegmentIndex)?.lowercaseString)!
-        var gender:String = FirstViewController.variables.gender.lowercaseString
-        var locat:String = (locationSegment.titleForSegmentAtIndex(locationSegment.selectedSegmentIndex)?.lowercaseString)!
+        var time: String = (timeSegment.titleForSegment(at: timeSegment.selectedSegmentIndex)?.lowercased())!
+        let gender:String = FirstViewController.variables.gender.lowercased()
+        var locat:String = (locationSegment.titleForSegment(at: locationSegment.selectedSegmentIndex)?.lowercased())!
         locat = locat + " "
         if(timeSegment.selectedSegmentIndex == 0){
             time = ""
         }else{
-            time = "for the past few " + time + ", "
+            time = "for the past few " + time + " "
         }
         if(locationSegment.selectedSegmentIndex == 0){
             locat = ""
         }
-        var par1 = "Patient reports that " + time + gender + " has been experiencing episodes of " + locat + "chest discomfort, described as "
+        let par1 = "Patient reports that " + time + gender + " has been experiencing episodes of " + locat + "chest discomfort, described as "
         
         var qual = ""
         switch(quality.selectedSegmentIndex){
@@ -143,7 +143,7 @@ class Page2ViewController: UIViewController {
         if(meal != ""){
             list1.append(meal)
         }
-        var size = list1.count
+        let size = list1.count
         for i in 0..<size{
             combo1 = combo1 + list1[i]
             if(i == size - 2 && size != 1){
@@ -156,7 +156,7 @@ class Page2ViewController: UIViewController {
             
         }
         
-        var dura:String = (duration.titleForSegmentAtIndex(duration.selectedSegmentIndex)?.lowercaseString)!
+        var dura:String = (duration.titleForSegment(at: duration.selectedSegmentIndex)?.lowercased())!
         if(dura != "default"){
             dura = "lasting " + dura
         }else{
@@ -168,13 +168,13 @@ class Page2ViewController: UIViewController {
         }
         barLabel.title = "2 (saved)"
     }
-    @IBAction func dataChanged(sender: UISegmentedControl) {
+    @IBAction func dataChanged(_ sender: UISegmentedControl) {
         barLabel.title = "2"
         if(!segList.contains(sender)){
             segList.append(sender)
         }
         var check = true
-        var size = segList.count
+        let size = segList.count
         for i in 0..<size{
             if(segList[i].selectedSegmentIndex != 0){
                 check = false

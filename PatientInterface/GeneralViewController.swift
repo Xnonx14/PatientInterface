@@ -19,6 +19,7 @@ class GeneralViewController: UITabBarController, UITabBarControllerDelegate{
         static var page3: Page3ViewController!
         static var page4: MailViewController!
         static var page5: Page5ViewController!
+        static var page6: ReturningViewController!
     }
     override func viewDidLoad() {
         variables.myController = self
@@ -29,12 +30,10 @@ class GeneralViewController: UITabBarController, UITabBarControllerDelegate{
         variables.page3 = variables.pages![2] as? Page3ViewController
         variables.page4 = variables.pages![3] as? MailViewController
         variables.page5 = variables.pages![4] as? Page5ViewController
+        variables.page6 = variables.pages![5] as? ReturningViewController
     }
-    static func changeView(val: UInt){
-        print("swipe")
-        print(val)
-        print(variables.myController.selectedIndex)
-        print(variables.pages!.count - 1)
+    static func changeView(_ val: UInt){
+        print(val.description)
         if(val == 2 && variables.myController.selectedIndex == (variables.pages!.count - 1)){
             variables.myController.selectedIndex = 0
         }else if(val == 1 && variables.myController.selectedIndex == 0){
@@ -46,7 +45,6 @@ class GeneralViewController: UITabBarController, UITabBarControllerDelegate{
         else if(val == 2){ // go right
             variables.myController.selectedIndex += 1
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,9 +65,8 @@ class GeneralViewController: UITabBarController, UITabBarControllerDelegate{
     static func prevent(){
         variables.myController.notSaved()
     }
-    override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         self.delegate = self
-//        print(item.title)
 //        self.tabBar.items![2].enabled = false
         
     }

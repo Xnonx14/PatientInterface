@@ -11,16 +11,14 @@ import MessageUI
 
 class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,UITextFieldDelegate  {
     @IBOutlet weak var mailAddress: UITextField!
-    @IBOutlet weak var subjectTF: UITextField!
     var combinedBody:String = "";
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mailAddress.delegate = self
-        self.subjectTF.delegate = self
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func Swiped(sender: UISwipeGestureRecognizer) {
+    @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {
         GeneralViewController.changeView(sender.direction.rawValue)
     }
     override func didReceiveMemoryWarning() {
@@ -33,39 +31,47 @@ class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,
         GeneralViewController.variables.page2.save()
         GeneralViewController.variables.page3.save()
         
-        var par1 = FirstViewController.variables.paragraph;
-        var par2 = Page2ViewController.variables.paragraph;
-        var par3 = Page3ViewController.variables.paragraph;
+        let par1 = FirstViewController.variables.paragraph;
+        let par2 = Page2ViewController.variables.paragraph;
+        let par3 = Page3ViewController.variables.paragraph;
         
         combinedBody = par1 + " " + par2 + " " + par3;
         
     }
-    @IBAction func sendEmailButtonTapped(sender: AnyObject) {
+    @IBAction func sendEmailButtonTapped(_ sender: AnyObject) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
-            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+            self.present(mailComposeViewController, animated: true, completion: nil)
         } else {
             self.showSendMailErrorAlert()
         }
     }
-    
+    func setupSubject() -> String{
+        var subject = ""
+        if(FirstViewController.variables.lastName != ""){
+            subject = ("Patient Info: " + FirstViewController.variables.lastName)
+            if(FirstViewController.variables.firstName != ""){
+                subject = subject + (", "+FirstViewController.variables.firstName)
+            }
+        }else if(FirstViewController.variables.firstName != ""){
+            subject = ("Patient Info: " + FirstViewController.variables.firstName)
+        }else{
+            subject = "Patient Info"
+        }
+        return subject
+    }
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         createBody();
-        if(mailAddress.text == ""){
-            mailAddress.text = "nchang@northwell.edu"
-        }
-        if(subjectTF.text == ""){
-            subjectTF.text = "Patient Info"
-        }
+        mailAddress.text = "nchang@northwell.edu"
         mailComposerVC.setToRecipients([mailAddress.text!])
-        mailComposerVC.setSubject(subjectTF.text!)
+        mailComposerVC.setSubject(self.setupSubject())
         mailComposerVC.setMessageBody(combinedBody, isHTML: false)
         
         return mailComposerVC
     }
-    func textFieldShouldReturn(textField: UITextField)->Bool {
+    func textFieldShouldReturn(_ textField: UITextField)->Bool {
         self.view.endEditing(true);
         return false;
     }
@@ -74,8 +80,8 @@ class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,
         sendMailErrorAlert.show()
     }
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func mailComposeController(_ controller: MFMailComposeViewController!, didFinishWith result: MFMailComposeResult, error: Error!) {
+        controller.dismiss(animated: true, completion: nil)
         
     }
 }
