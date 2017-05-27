@@ -10,6 +10,7 @@
 		8A25A5741D665FDC000CC88A /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25A5731D665FDC000CC88A /* Page2ViewController.swift */; };
 		8A25A5761D66602B000CC88A /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25A5751D66602B000CC88A /* MailViewController.swift */; };
 		8A25A5781D6660A0000CC88A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25A5771D6660A0000CC88A /* MessageUI.framework */; };
+		8A6F16201ED69FE2004D0988 /* SentencePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6F161F1ED69FE2004D0988 /* SentencePage.swift */; };
 		8A7711381E159E4C00047CDB /* ReturningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7711371E159E4C00047CDB /* ReturningViewController.swift */; };
 		8A7D47D91E22602D008669A6 /* CPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D47D81E22602D008669A6 /* CPViewController.swift */; };
 		8A7D47DB1E22A51D008669A6 /* SOBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D47DA1E22A51D008669A6 /* SOBViewController.swift */; };
@@ -24,12 +25,15 @@
 		8ADC637B1D5304E100DBFAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC637A1D5304E100DBFAE9 /* Assets.xcassets */; };
 		8ADC637E1D5304E100DBFAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC637C1D5304E100DBFAE9 /* LaunchScreen.storyboard */; };
 		8AE3C3BB1E1FD712006141D1 /* CPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3C3BA1E1FD712006141D1 /* CPView.swift */; };
+		8AFA7BB71E7F1A2600A5FE0F /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA7BB61E7F1A2600A5FE0F /* ButtonViewController.swift */; };
+		8AFA7BB91E7F389700A5FE0F /* ToggleableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA7BB81E7F389700A5FE0F /* ToggleableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A25A5731D665FDC000CC88A /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		8A25A5751D66602B000CC88A /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		8A25A5771D6660A0000CC88A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8A6F161F1ED69FE2004D0988 /* SentencePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentencePage.swift; sourceTree = "<group>"; };
 		8A7711371E159E4C00047CDB /* ReturningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturningViewController.swift; sourceTree = "<group>"; };
 		8A7D47D81E22602D008669A6 /* CPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPViewController.swift; sourceTree = "<group>"; };
 		8A7D47DA1E22A51D008669A6 /* SOBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOBViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		8ADC637D1D5304E100DBFAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ADC637F1D5304E100DBFAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AE3C3BA1E1FD712006141D1 /* CPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPView.swift; sourceTree = "<group>"; };
+		8AFA7BB61E7F1A2600A5FE0F /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		8AFA7BB81E7F389700A5FE0F /* ToggleableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 				8A7D47D81E22602D008669A6 /* CPViewController.swift */,
 				8A7D47DA1E22A51D008669A6 /* SOBViewController.swift */,
 				8A7D47DC1E22AA07008669A6 /* PalpsViewController.swift */,
+				8AFA7BB61E7F1A2600A5FE0F /* ButtonViewController.swift */,
+				8AFA7BB81E7F389700A5FE0F /* ToggleableButton.swift */,
+				8A6F161F1ED69FE2004D0988 /* SentencePage.swift */,
 			);
 			path = PatientInterface;
 			sourceTree = "<group>";
@@ -133,8 +142,9 @@
 				TargetAttributes = {
 					8ADC636D1D5304DF00DBFAE9 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = RGY59AX98T;
+						DevelopmentTeam = 53AQUB9G3Q;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -175,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADC63721D5304E000DBFAE9 /* AppDelegate.swift in Sources */,
+				8AFA7BB91E7F389700A5FE0F /* ToggleableButton.swift in Sources */,
 				8A7D47DB1E22A51D008669A6 /* SOBViewController.swift in Sources */,
 				8A8C61BF1D6963AD007CDB38 /* Page5ViewController.swift in Sources */,
 				8A8C61BD1D66DDCA007CDB38 /* Page3ViewController.swift in Sources */,
@@ -182,11 +193,13 @@
 				8A25A5761D66602B000CC88A /* MailViewController.swift in Sources */,
 				8A8C61BB1D66C3C0007CDB38 /* GeneralViewController.swift in Sources */,
 				8A7711381E159E4C00047CDB /* ReturningViewController.swift in Sources */,
+				8AFA7BB71E7F1A2600A5FE0F /* ButtonViewController.swift in Sources */,
 				8A25A5741D665FDC000CC88A /* Page2ViewController.swift in Sources */,
 				8ADC63741D5304E000DBFAE9 /* FirstViewController.swift in Sources */,
 				8A7D47D91E22602D008669A6 /* CPViewController.swift in Sources */,
 				8A7D47DD1E22AA07008669A6 /* PalpsViewController.swift in Sources */,
 				8AD5B1131E1B4679002D3C0B /* UIButtonWInfo.swift in Sources */,
+				8A6F16201ED69FE2004D0988 /* SentencePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +314,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RGY59AX98T;
+				DEVELOPMENT_TEAM = 53AQUB9G3Q;
 				INFOPLIST_FILE = PatientInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KayGames.PatientInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KayNineApps.PatientInterface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -318,12 +332,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RGY59AX98T;
+				DEVELOPMENT_TEAM = 53AQUB9G3Q;
 				INFOPLIST_FILE = PatientInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KayGames.PatientInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KayNineApps.PatientInterface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

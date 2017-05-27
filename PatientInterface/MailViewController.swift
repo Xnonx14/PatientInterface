@@ -10,12 +10,31 @@ import UIKit
 import MessageUI
 
 class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,UITextFieldDelegate  {
+    @IBOutlet weak var seg3: UISegmentedControl!
+    @IBOutlet weak var seg2: UISegmentedControl!
+    @IBOutlet weak var seg1: UISegmentedControl!
     @IBOutlet weak var mailAddress: UITextField!
+    @IBOutlet weak var btn1: ToggleableButton!
+    @IBOutlet weak var btn2: ToggleableButton!
+    @IBOutlet weak var btn3: ToggleableButton!
+    @IBOutlet weak var btn4: ToggleableButton!
+    @IBOutlet weak var btn5: ToggleableButton!
+    @IBOutlet weak var btn6: ToggleableButton!
+
+    
     var combinedBody:String = "";
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mailAddress.delegate = self
         // Do any additional setup after loading the view.
+        /*
+        btn1.setButtonOff()
+        btn2.setButtonOff()
+        btn3.setButtonOff()
+        btn4.setButtonOff()
+        btn5.setButtonOff()
+        btn6.setButtonOff()
+         */
     }
     
     @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {
@@ -35,8 +54,36 @@ class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,
         let par2 = Page2ViewController.variables.paragraph;
         let par3 = Page3ViewController.variables.paragraph;
         
-        combinedBody = par1 + " " + par2 + " " + par3;
+        //START OF UPDATE 1
+        var u1 = Array<Int>();
+        u1.append(seg1.selectedSegmentIndex);
+        u1.append(seg2.selectedSegmentIndex);
+        u1.append(seg3.selectedSegmentIndex);
+        combinedBody = par1 + " " + par2 + " " + par3 + SentencePage.update1(arr: u1)
         
+        //START OF UPDATE 2
+        var u2 = Array<String>()
+        if(btn1.isToggled()){
+            u2.append("echo")
+        }
+        if(btn2.isToggled()){
+            u2.append("treadmill stress test")
+        }
+        if(btn3.isToggled()){
+            u2.append("stress echo")
+        }
+        if(btn4.isToggled()){
+            u2.append("nuclear stress test")
+        }
+        if(btn5.isToggled()){
+            u2.append("Holter")
+        }
+        if(btn6.isToggled()){
+            u2.append("CXR")
+        }
+        if(u2.count != 0){
+            combinedBody = combinedBody + SentencePage.update2(arr: u2)
+        }
     }
     @IBAction func sendEmailButtonTapped(_ sender: AnyObject) {
         let mailComposeViewController = configuredMailComposeViewController()

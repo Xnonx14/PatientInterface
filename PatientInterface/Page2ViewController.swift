@@ -62,7 +62,7 @@ class Page2ViewController: UIViewController {
         if(locationSegment.selectedSegmentIndex == 0){
             locat = ""
         }
-        let par1 = "Patient reports that " + time + gender + " has been experiencing episodes of " + locat + "chest discomfort, described as "
+        var par1 = "Patient reports that " + time + gender + " has been experiencing episodes of " + locat + "chest discomfort, described as "
         
         var qual = ""
         switch(quality.selectedSegmentIndex){
@@ -124,13 +124,14 @@ class Page2ViewController: UIViewController {
         default:
             meal = ""
         }
-        //combo (quality, exertion, pleuritic, tenderness, meals
-        
-        var combo1 = "" //qual + exert + pleur + tend + meal
-        var list1 = Array<String>();
         if(qual != ""){
-            list1.append(qual)
+            par1 += qual
         }
+        
+        //combo exertion, pleuritic, tenderness, meals
+        var combo1 = "" //exert + pleur + tend + meal
+        var list1 = Array<String>();
+        
         if(exert != ""){
             list1.append(exert)
         }
@@ -144,16 +145,24 @@ class Page2ViewController: UIViewController {
             list1.append(meal)
         }
         let size = list1.count
-        for i in 0..<size{
-            combo1 = combo1 + list1[i]
-            if(i == size - 2 && size != 1){
-                combo1 = combo1 + " and "
-            }else if(size != 1 && duration.selectedSegmentIndex != 0){
-                combo1 = combo1 + ", "
-            }else if(size == 1){
-                combo1 += " "
+        if(size == 0){
+            combo1 = ", "
+        }else if(size == 1){
+            combo1 = ", " + list1[0]
+            if(duration.selectedSegmentIndex != 0){
+               combo1 += ", "
             }
-            
+        }else{
+            combo1 += ", "
+            for i in 0..<size{
+                combo1 = combo1 + list1[i]
+                if(i != size - 1){
+                    combo1 += ", "
+                }
+            }
+            if(duration.selectedSegmentIndex != 0){
+                combo1 = combo1 + ", "
+            }
         }
         
         var dura:String = (duration.titleForSegment(at: duration.selectedSegmentIndex)?.lowercased())!

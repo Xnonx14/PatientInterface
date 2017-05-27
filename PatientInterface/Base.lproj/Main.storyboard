@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -1032,7 +1032,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-n7-f2K">
-                                <rect key="frame" x="357" y="497" width="55" height="30"/>
+                                <rect key="frame" x="357" y="546" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
@@ -1040,18 +1040,90 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CtV-cO-NVb">
-                                <rect key="frame" x="255" y="407" width="308" height="30"/>
+                                <rect key="frame" x="255" y="456" width="308" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5e-Zh-o4h">
-                                <rect key="frame" x="206" y="411" width="41" height="21"/>
+                                <rect key="frame" x="206" y="460" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-os-KR3">
+                                <rect key="frame" x="93" y="106" width="583" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="CP+"/>
+                                    <segment title="CP-"/>
+                                    <segment title="SOB"/>
+                                    <segment title="Palps"/>
+                                    <segment title="Syncope"/>
+                                    <segment title="Dizziness"/>
+                                    <segment title="HTN"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fqO-3k-lOi">
+                                <rect key="frame" x="93" y="171" width="583" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="CP+"/>
+                                    <segment title="CP-"/>
+                                    <segment title="SOB"/>
+                                    <segment title="Palps"/>
+                                    <segment title="Syncope"/>
+                                    <segment title="Dizziness"/>
+                                    <segment title="HTN"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eDb-zb-DuH">
+                                <rect key="frame" x="93" y="240" width="583" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="CP+"/>
+                                    <segment title="CP-"/>
+                                    <segment title="SOB"/>
+                                    <segment title="Palps"/>
+                                    <segment title="Syncope"/>
+                                    <segment title="Dizziness"/>
+                                    <segment title="HTN"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zv-zY-JhN" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="267" y="334" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TTE"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwn-S0-ElB" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="305" y="334" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="STR"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4m-bl-W8i" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="343" y="334" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="STE"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nM-BW-55e" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="380" y="334" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="NUC"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCz-3w-cwZ" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="421" y="334" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Holter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjV-qd-5oJ" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="471" y="334" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CXR"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -1062,7 +1134,16 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Send Mail" image="second" id="E5v-vI-P9b"/>
                     <connections>
+                        <outlet property="btn1" destination="3zv-zY-JhN" id="JP2-ao-v3t"/>
+                        <outlet property="btn2" destination="uwn-S0-ElB" id="YId-N0-lkR"/>
+                        <outlet property="btn3" destination="k4m-bl-W8i" id="ZZf-CG-QBa"/>
+                        <outlet property="btn4" destination="4nM-BW-55e" id="cYB-Wu-A6x"/>
+                        <outlet property="btn5" destination="MCz-3w-cwZ" id="sAn-91-Mwg"/>
+                        <outlet property="btn6" destination="GjV-qd-5oJ" id="Yk7-jo-vqG"/>
                         <outlet property="mailAddress" destination="CtV-cO-NVb" id="36F-Xx-AQs"/>
+                        <outlet property="seg1" destination="jqp-os-KR3" id="m50-82-d9f"/>
+                        <outlet property="seg2" destination="fqO-3k-lOi" id="iU1-WP-Iaa"/>
+                        <outlet property="seg3" destination="eDb-zb-DuH" id="CnW-8X-eHZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6WU-bt-lk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1077,7 +1158,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1982" y="-361"/>
+            <point key="canvasLocation" x="1981.25" y="-361.5234375"/>
         </scene>
         <!--3-->
         <scene sceneID="JI9-bk-uh3">
@@ -1287,11 +1368,383 @@
                         <segue destination="2YD-Mq-eP6" kind="relationship" relationship="viewControllers" id="CIL-We-RbA"/>
                         <segue destination="woH-rj-Pom" kind="relationship" relationship="viewControllers" id="1OE-5X-CZG"/>
                         <segue destination="0WO-r8-e8o" kind="relationship" relationship="viewControllers" id="Cej-UC-r9H"/>
+                        <segue destination="z8M-e4-bTK" kind="relationship" relationship="viewControllers" id="gSF-go-9Mr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="634" y="-1560"/>
+        </scene>
+        <!--Buttons-->
+        <scene sceneID="S6f-kq-Zr5">
+            <objects>
+                <viewController id="z8M-e4-bTK" customClass="ButtonViewController" customModule="PatientInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="osW-oT-E4Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="aOg-ws-9Lm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="haM-gN-Xjq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF1-Z5-tEN" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="183" y="150" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CP"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyp-Vb-n6J">
+                                <rect key="frame" x="100" y="121" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Findings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgx-d7-CTr">
+                                <rect key="frame" x="100" y="210" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Problems" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jd-ax-hKf">
+                                <rect key="frame" x="100" y="303" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7s-2w-Pvi">
+                                <rect key="frame" x="100" y="427" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTU-jr-UK1" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="261" y="150" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SOB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-7f-0hG" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="334" y="150" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Palps"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-3s-mGu" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="396" y="150" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lightheaded"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTR-gS-EyG" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="512" y="150" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dizziness"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9V-UI-3kc" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="615" y="150" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="None"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-qn-SGi" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="183" y="238" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rales"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-zU-M7W" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="275" y="238" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Murmurs"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIa-tq-4ZJ" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="376" y="238" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edema"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zec-Q7-yJP" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="471" y="238" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="None"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyY-Sc-mw6" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="185" y="337" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CP"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aG7-G3-ACp" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="250" y="337" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SOB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bme-wY-edb" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="319" y="337" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Palps"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziz-Gn-3Rc" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="404" y="337" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Syncope"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-2H-Ipk" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="188" y="375" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="HTN"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="UN5-DX-Zp0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRB-Bq-uWw" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="255" y="375" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Abnl ECG"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="WTQ-PJ-VuA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syq-sp-vPG" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="352" y="375" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aortic aneurysm"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="lVV-n2-DZI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQk-oV-BIt" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="100" y="460" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SE"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="WuN-uj-m6A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MT-Je-8br" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="200" y="460" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Echo"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="nXU-Y0-1jM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzg-xa-nsr" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="300" y="460" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="STR"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="dJ5-hQ-vbb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zb-5T-Qcy" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="400" y="460" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Nuclear"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="Cr7-8u-gca"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hM-cf-bLE" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="500" y="460" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Holter"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="aX5-h5-GY4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie7-ls-Rxt" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="600" y="460" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CXR"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="eFH-9e-M2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEI-Ng-hbc" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="100" y="500" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="No Tests"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="lvi-kv-wZR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxc-qE-Edh" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="200" y="500" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1 month"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="vZx-hl-GAx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVf-BO-Wga" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="300" y="500" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2 months"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="Y6v-lf-qhl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YX-a0-Ye4" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="400" y="500" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3 months"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="gD4-8v-foJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MI-xq-dCF" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="500" y="500" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="6 months"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="AWj-Lc-ld3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPn-r6-JW7" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="600" y="500" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1 year"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="nnh-I4-oqz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMo-D7-UHb" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="100" y="540" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="omeprazole"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="Idv-9J-b9t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUh-et-89b" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="200" y="540" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Metoprolol"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="ltG-Pp-bb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzk-rK-jFp" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="300" y="540" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ASA"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="6Yg-zb-QAN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWN-ZM-jke" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="400" y="540" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Simvastatin"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="REl-7l-SZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dig-m2-9C6" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="500" y="540" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Amlodipine"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="qLp-1E-u2l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDZ-cO-Sn1" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
+                                <rect key="frame" x="602" y="540" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Losartan"/>
+                                <connections>
+                                    <action selector="ButtonToggled:" destination="z8M-e4-bTK" eventType="touchUpInside" id="yMn-dW-XlC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LD-86-4R0">
+                                <rect key="frame" x="200" y="655" width="463" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZG-56-JKT">
+                                <rect key="frame" x="102" y="660" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dP-rW-d6U">
+                                <rect key="frame" x="350" y="711" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send Mail"/>
+                                <connections>
+                                    <action selector="sendMail:" destination="z8M-e4-bTK" eventType="touchUpInside" id="Cn8-nU-SyQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6y-b5-Hps">
+                                <rect key="frame" x="697" y="20" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear All"/>
+                                <connections>
+                                    <action selector="clearPage:" destination="z8M-e4-bTK" eventType="touchUpInside" id="ldc-l2-acv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="v6U-pg-YRc" appends="YES" id="xVR-p1-wyt"/>
+                            <outletCollection property="gestureRecognizers" destination="BUj-a4-beB" appends="YES" id="ZXK-46-O1l"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Buttons" image="first" selectedImage="first" id="eUw-8z-Vav"/>
+                    <connections>
+                        <outlet property="btnF1" destination="M2a-qn-SGi" id="Rwb-ag-iSM"/>
+                        <outlet property="btnF2" destination="ufF-zU-M7W" id="fdA-ck-bnj"/>
+                        <outlet property="btnF3" destination="DIa-tq-4ZJ" id="Lbr-7B-sMn"/>
+                        <outlet property="btnF4" destination="Zec-Q7-yJP" id="ri1-1e-M4n"/>
+                        <outlet property="btnP1" destination="uyY-Sc-mw6" id="Jov-Qc-TjE"/>
+                        <outlet property="btnP2" destination="aG7-G3-ACp" id="EYw-vh-LGk"/>
+                        <outlet property="btnP3" destination="bme-wY-edb" id="792-e4-MAo"/>
+                        <outlet property="btnP4" destination="ziz-Gn-3Rc" id="zDo-B6-knG"/>
+                        <outlet property="btnP5" destination="xvs-2H-Ipk" id="Tne-VA-4Yb"/>
+                        <outlet property="btnP6" destination="HRB-Bq-uWw" id="2R2-kL-BcS"/>
+                        <outlet property="btnP7" destination="syq-sp-vPG" id="ERa-Om-8Nl"/>
+                        <outlet property="btnPlan1_1" destination="wQk-oV-BIt" id="hN3-Iw-yzD"/>
+                        <outlet property="btnPlan1_2" destination="9MT-Je-8br" id="Wde-Iq-V77"/>
+                        <outlet property="btnPlan1_3" destination="Uzg-xa-nsr" id="a0e-SR-EYc"/>
+                        <outlet property="btnPlan1_4" destination="4Zb-5T-Qcy" id="4ES-Ap-4p0"/>
+                        <outlet property="btnPlan1_5" destination="6hM-cf-bLE" id="7yN-Uj-gvg"/>
+                        <outlet property="btnPlan1_6" destination="Ie7-ls-Rxt" id="eyk-c8-qlI"/>
+                        <outlet property="btnPlan2_1" destination="AEI-Ng-hbc" id="3kA-mT-Yp8"/>
+                        <outlet property="btnPlan2_2" destination="Cxc-qE-Edh" id="pSQ-31-gVm"/>
+                        <outlet property="btnPlan2_3" destination="YVf-BO-Wga" id="ckJ-f5-Dep"/>
+                        <outlet property="btnPlan2_4" destination="6YX-a0-Ye4" id="CVS-ft-yMZ"/>
+                        <outlet property="btnPlan2_5" destination="4MI-xq-dCF" id="ypH-xZ-lYO"/>
+                        <outlet property="btnPlan2_6" destination="FPn-r6-JW7" id="exr-rf-yZN"/>
+                        <outlet property="btnPlan3_1" destination="pMo-D7-UHb" id="r2I-S1-9Ks"/>
+                        <outlet property="btnPlan3_2" destination="YUh-et-89b" id="jWn-P8-TLN"/>
+                        <outlet property="btnPlan3_3" destination="Uzk-rK-jFp" id="nPF-cm-ri5"/>
+                        <outlet property="btnPlan3_4" destination="rWN-ZM-jke" id="ydR-TS-E49"/>
+                        <outlet property="btnPlan3_5" destination="dig-m2-9C6" id="Er9-iF-2y8"/>
+                        <outlet property="btnPlan3_6" destination="RDZ-cO-Sn1" id="kMQ-hU-I8i"/>
+                        <outlet property="btnS1" destination="cF1-Z5-tEN" id="6uS-Oz-8WF"/>
+                        <outlet property="btnS2" destination="dTU-jr-UK1" id="0Si-aZ-lvJ"/>
+                        <outlet property="btnS3" destination="bNw-7f-0hG" id="JOy-Vn-yrk"/>
+                        <outlet property="btnS4" destination="oL2-3s-mGu" id="kwM-83-9sa"/>
+                        <outlet property="btnS5" destination="LTR-gS-EyG" id="8zB-y1-WcZ"/>
+                        <outlet property="btnS6" destination="e9V-UI-3kc" id="SPg-sv-7q2"/>
+                        <outlet property="clearAll" destination="z6y-b5-Hps" id="fpM-Zl-D3N"/>
+                        <outlet property="nameField" destination="5LD-86-4R0" id="bZs-2N-X3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25S-0l-POU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="v6U-pg-YRc">
+                    <connections>
+                        <action selector="swiped2:" destination="z8M-e4-bTK" id="kVU-am-kVa"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="BUj-a4-beB">
+                    <connections>
+                        <action selector="swiped:" destination="z8M-e4-bTK" id="BSF-jx-ay7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4826.5625" y="-362.109375"/>
         </scene>
         <!--Palps View Controller-->
         <scene sceneID="YK0-bL-jqX">
