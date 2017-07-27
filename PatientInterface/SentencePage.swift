@@ -24,7 +24,7 @@ class SentencePage{
         return str
     }
     
-    static func update1(arr:Array<Int>)-> String{
+    static func update1(arr:Array<Int>,follow:Bool)-> String{
         if(arr.count == 3){ //the number of sentences to be constructed by the specific page
             let index1 = arr[0];
             let index2 = arr[1];
@@ -36,10 +36,10 @@ class SentencePage{
                 p1 = "Chest discomfort with exertion -"
                 break;
             case 2:
-                p1 = "Chest discomfort, non-exertion -"
+                p1 = "Chest discomfort, non-exertional -"
                 break;
             case 3:
-                p1 = "Short of Breath -"
+                p1 = "Shortness of Breath -"
                 break;
             case 4:
                 p1 = "Palpitations -"
@@ -53,6 +53,15 @@ class SentencePage{
             case 7:
                 p1 = "HTN -"
                 break;
+            case 8:
+                p1 = "Abnormal ECG -"
+                break;
+            case 9:
+                p1 = "Cardiac clearance -"
+                break;
+            case 10:
+                p1 = "Murmur -"
+                break;
             default:
                 p1 = ""
             }
@@ -63,10 +72,10 @@ class SentencePage{
                 p2 = "Chest discomfort with exertion -"
                 break;
             case 2:
-                p2 = "Chest discomfort, non-exertion -"
+                p2 = "Chest discomfort, non-exertional -"
                 break;
             case 3:
-                p2 = "Short of Breath -"
+                p2 = "Shortness of Breath -"
                 break;
             case 4:
                 p2 = "Palpitations -"
@@ -80,6 +89,15 @@ class SentencePage{
             case 7:
                 p2 = "HTN -"
                 break;
+            case 8:
+                p2 = "Abnormal ECG -"
+                break;
+            case 9:
+                p2 = "Cardiac clearance -"
+                break;
+            case 10:
+                p2 = "Murmur -"
+                break;
             default:
                 p2 = ""
             }
@@ -90,10 +108,10 @@ class SentencePage{
                 p3 = "Chest discomfort with exertion -"
                 break;
             case 2:
-                p3 = "Chest discomfort, non-exertion -"
+                p3 = "Chest discomfort, non-exertional -"
                 break;
             case 3:
-                p3 = "Short of Breath -"
+                p3 = "Shortness of Breath -"
                 break;
             case 4:
                 p3 = "Palpitations -"
@@ -106,6 +124,15 @@ class SentencePage{
                 break;
             case 7:
                 p3 = "HTN -"
+                break;
+            case 8:
+                p3 = "Abnormal ECG -"
+                break;
+            case 9:
+                p3 = "Cardiac clearance -"
+                break;
+            case 10:
+                p3 = "Murmur -"
                 break;
             default:
                 p3 = ""
@@ -123,8 +150,11 @@ class SentencePage{
             }
             var combined = "\n\n"
             for i in 0 ..< a1.count{
-                let temp = (i+1).description + ") " + a1[i] + "\n\n"
+                let temp = "(" + (i+1).description + ") " + a1[i] + "\n\n"
                 combined = combined + temp
+            }
+            if(follow){
+                combined = combined + "(" + (a1.count + 1).description + ") " + "Followup - \n\n"
             }
             
             return combined;

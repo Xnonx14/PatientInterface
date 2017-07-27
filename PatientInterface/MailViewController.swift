@@ -10,6 +10,7 @@ import UIKit
 import MessageUI
 
 class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,UITextFieldDelegate  {
+    @IBOutlet weak var followSwitch: UISwitch!
     @IBOutlet weak var seg3: UISegmentedControl!
     @IBOutlet weak var seg2: UISegmentedControl!
     @IBOutlet weak var seg1: UISegmentedControl!
@@ -59,7 +60,7 @@ class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,
         u1.append(seg1.selectedSegmentIndex);
         u1.append(seg2.selectedSegmentIndex);
         u1.append(seg3.selectedSegmentIndex);
-        combinedBody = par1 + " " + par2 + " " + par3 + SentencePage.update1(arr: u1)
+        combinedBody = par1 + "  " + par2 + "  " + par3 + SentencePage.update1(arr: u1,follow:followSwitch.isOn)
         
         //START OF UPDATE 2
         var u2 = Array<String>()
@@ -127,8 +128,28 @@ class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,
         sendMailErrorAlert.show()
     }
     
-    func mailComposeController(_ controller: MFMailComposeViewController!, didFinishWith result: MFMailComposeResult, error: Error!) {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
         
     }
+    public func clearAll(_ btn:UIButton){
+        seg1.selectedSegmentIndex = 0
+        seg2.selectedSegmentIndex = 0
+        seg3.selectedSegmentIndex = 0
+        btn1.setButtonOff()
+        btn2.setButtonOff()
+        btn3.setButtonOff()
+        btn4.setButtonOff()
+        btn5.setButtonOff()
+        btn6.setButtonOff()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

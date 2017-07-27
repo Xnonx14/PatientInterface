@@ -74,7 +74,7 @@ class Page3ViewController: UIViewController {
         //list contains all the relevant information but is not in any specific order
         var list2 = Array<UISegmentedControl>()
         var sentence1 = ""
-        var sentence2 = " "
+        var sentence2 = "  "
         if(SOB.selectedSegmentIndex != 0 || SOBDur.selectedSegmentIndex != 0){
             list2.append(SOB)
             list2.append(SOBDur)
@@ -138,8 +138,8 @@ class Page3ViewController: UIViewController {
             default: ""
             }
             switch(c){
-            case 1: p3 = " occuring with exertion"
-            case 2: p3 = " occuring at rest"
+            case 1: p3 = " occurring with exertion"
+            case 2: p3 = " occurring at rest"
             default: ""
             }
             switch(d){
@@ -192,9 +192,9 @@ class Page3ViewController: UIViewController {
         var sentence3 = ""
         switch(f){
         case 1:
-            sentence3 = " Patient recalls episodes of syncope."
+            sentence3 = "  Patient recalls episodes of syncope."
         case 2:
-            sentence3 = " Patient denies history of syncope."
+            sentence3 = "  Patient denies history of syncope."
         default:
             sentence3 = ""
         }

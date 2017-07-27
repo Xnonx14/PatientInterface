@@ -9,6 +9,8 @@
 import UIKit
 
 class Page2ViewController: UIViewController {
+    @IBOutlet weak var set2Default: ToggleableButton!
+    @IBOutlet weak var set1Default: ToggleableButton!
     @IBOutlet weak var barLabel: UITabBarItem!
     @IBOutlet weak var timeSegment: UISegmentedControl!
     @IBOutlet weak var locationSegment: UISegmentedControl!
@@ -50,14 +52,50 @@ class Page2ViewController: UIViewController {
         if(timeSegment == nil){
             return
         }
+        
+        var set1 = ToggleableButton.variables.set1
+        
+        
+        
+        
         var time: String = (timeSegment.titleForSegment(at: timeSegment.selectedSegmentIndex)?.lowercased())!
+
         let gender:String = FirstViewController.variables.gender.lowercased()
         var locat:String = (locationSegment.titleForSegment(at: locationSegment.selectedSegmentIndex)?.lowercased())!
         locat = locat + " "
         if(timeSegment.selectedSegmentIndex == 0){
             time = ""
-        }else{
+        }else if(set1Default.isToggled()){
             time = "for the past few " + time + " "
+        }else if(set1.count == 1){
+            let num1 = Int(set1[0].currentTitle!)
+            if(num1 == 1){
+                let choice = timeSegment.selectedSegmentIndex
+                if(choice == 1){
+                    time = "hour"
+                }else if(choice == 2){
+                    time = "day"
+                }else if(choice == 3){
+                    time = "week"
+                }else if choice == 4{
+                    time = "month"
+                }else if choice == 5{
+                    time = "year"
+                }
+                
+            }
+            time = "for the past " + set1[0].currentTitle! + " " + time + " "
+        }else if(set1.count == 2){
+            let num1 = Int(set1[0].currentTitle!)
+            let num2 = Int(set1[1].currentTitle!)
+            if(num1! < num2!){
+                let range = (num1?.description)! + "-" + (num2?.description)!
+                time = "for the past " + range + " " + time + " "
+            }else{
+                let range = (num2?.description)! + "-" + (num1?.description)!
+                time = "for the past " + range + " " + time + " "
+            }
+            
         }
         if(locationSegment.selectedSegmentIndex == 0){
             locat = ""
@@ -166,11 +204,64 @@ class Page2ViewController: UIViewController {
         }
         
         var dura:String = (duration.titleForSegment(at: duration.selectedSegmentIndex)?.lowercased())!
-        if(dura != "default"){
-            dura = "lasting " + dura
-        }else{
+        
+        let count = ToggleableButton.variables.set2.count
+        let set2 = ToggleableButton.variables.set2
+        var number = ""
+        var range = ""
+        
+        if(dura == "default"){
             dura = ""
+        }else{
+            if(set2Default.isToggled()){
+                dura = "lasting " + dura
+            }else{
+                if(count == 1){
+                    print(set2[0].currentTitle!)
+                    let num1 = Int(set2[0].currentTitle!)!
+                    if(num1 == 1){
+                        let index = duration.selectedSegmentIndex
+                        if index == 1{
+                            dura = "second"
+                        }else if index == 2{
+                            dura = "minute"
+                        }else if index == 3{
+                            dura = "hour"
+                        }else if index == 4{
+                            dura = "day"
+                        }
+                    }
+                    number = num1.description
+                    
+                    if(dura != "default"){
+                        dura = "lasting " + num1.description + " " + dura
+                    }else{
+                        dura = ""
+                    }
+                    
+                }else if(count == 2){
+                    let num1:Int = Int(set2[0].currentTitle!)!
+                    let num2:Int = Int(set2[1].currentTitle!)!
+                    
+                    if(num1 < num2){
+                        range = num1.description + "-" + num2.description
+                    }else{
+                        range = num2.description + "-" + num1.description
+                    }
+                    
+                    if(dura != "default"){
+                        dura = "lasting " + range + " " +  dura
+                    }else{
+                        dura = ""
+                    }
+                }
+                
+            }
+
         }
+        
+        
+        
         variables.paragraph = par1 + combo1 + dura + "."
         if(chestPain.selectedSegmentIndex == 1){
             variables.paragraph = "Patient denies chest pain."

@@ -26,6 +26,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnCP: UIButton!
     @IBOutlet weak var btnCAD: UIButton!
     @IBOutlet weak var btnECG: UIButton!
+    @IBOutlet weak var btnCC: UIButton!
     struct variables{
         static var myController:FirstViewController!
         static var paragraph = "Default Text";
@@ -42,6 +43,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         GeneralViewController.variables.page1.clearAll(btnClearAll)
         GeneralViewController.variables.page2.clearAllBtnPressed(btnClearAll)
         GeneralViewController.variables.page3.clearAll(btnClearAll)
+        GeneralViewController.variables.page4.clearAll(btnClearAll)
     }
     @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {
         GeneralViewController.changeView(sender.direction.rawValue)
@@ -170,6 +172,9 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             }else if(combo2[u].contains("SOB")){
                 combo2[u] = "shortness of breath"
                 combined2 += combo2[u]
+            }else if(combo2[u].contains("Clearance")){
+                combo2[u] = "Cardiac Clearance"
+                combined2 += combo2[u]
             }else{
                 combined2 += combo2[u].lowercased()
             }
@@ -230,6 +235,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         btnECG.setTitleColor(defaultColor, for: UIControlState())
         dizziness.setTitleColor(defaultColor, for: UIControlState())
         btnMurmur.setTitleColor(defaultColor, for: UIControlState())
+        btnCC.setTitleColor(defaultColor, for: UIControlState())
         variables.myController = self
         btnNone.setTitleColor(selectedColor, for: UIControlState())
         tfAge.keyboardType = UIKeyboardType.numberPad;

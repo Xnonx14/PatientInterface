@@ -9,6 +9,12 @@
 import UIKit
 
 class ToggleableButton: UIButton {
+    struct variables {
+        static var set1 = [ToggleableButton]()
+        static var set1FewFlag = false
+        static var set2 = [ToggleableButton]()
+        
+    }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setButtonOff()
@@ -21,7 +27,57 @@ class ToggleableButton: UIButton {
         self.setTitleColor(UIColor.gray, for: UIControlState.normal)
     }
     public func toggleButton(){
-        print("Toggling")
+        if(self.accessibilityIdentifier != nil){
+            if((self.accessibilityIdentifier?.hasPrefix("id"))!){
+                if(self.currentTitle == "Default"){
+                    if(self.isToggled()){
+                        
+                    }else{
+                        for slot in variables.set1{
+                            slot.setButtonOff()
+                        }
+                        variables.set1.removeAll(keepingCapacity: false)
+                    }
+                }
+                else if(variables.set1.contains(self)){
+                    let index = variables.set1.index(of: self)
+                    variables.set1.remove(at: index!)
+                    //continue to untoggle...
+                }else{
+                    //check to see if there are already two buttons toggled
+                    if((variables.set1.count)>=2){
+                        return
+                    }else{
+                        variables.set1.append(self)
+                    }
+                }
+            }
+            if(self.accessibilityIdentifier?.hasPrefix("sd"))!{
+                if(self.currentTitle == "Default"){
+                    if(self.isToggled()){
+                        
+                    }else{
+                        for slot in variables.set2{
+                            slot.setButtonOff()
+                        }
+                        variables.set2.removeAll(keepingCapacity: false)
+                    }
+                }
+                else if(variables.set2.contains(self)){
+                    let index = variables.set2.index(of: self)
+                    variables.set2.remove(at: index!)
+                    //continue to untoggle...
+                }else{
+                    //check to see if there are already two buttons toggled
+                    if((variables.set2.count)>=2){
+                        return
+                    }else{
+                        variables.set2.append(self)
+                    }
+                }
+            }
+        }
+        
         if(self.currentTitleColor != UIColor.gray){
             setButtonOff()
         }else{
