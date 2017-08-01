@@ -93,4 +93,21 @@ class ToggleableButton: UIButton {
             return true
         }
     }
+    public static func clearSet1(){
+        let size = variables.set1.count
+        for i in 0..<size{
+            variables.set1[i].setButtonOff()
+        }
+        variables.set1.removeAll()
+        Page2ViewController.variables.set1DefaultVar.setButtonOn()
+    }
+    public static func clearSet2(){
+        let size = variables.set2.count
+        for i in 0..<size{
+            variables.set2[i].setButtonOff()
+        }
+        
+        variables.set2.removeAll()
+        Page2ViewController.variables.set2DefaultVar.setButtonOn()
+    }
 }

@@ -133,9 +133,15 @@ class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,
         
     }
     public func clearAll(_ btn:UIButton){
-        seg1.selectedSegmentIndex = 0
-        seg2.selectedSegmentIndex = 0
-        seg3.selectedSegmentIndex = 0
+        if(seg1 == nil || seg2 == nil || seg3 == nil){
+            return
+        }else{
+            seg1.selectedSegmentIndex = 0
+            seg2.selectedSegmentIndex = 0
+            seg3.selectedSegmentIndex = 0
+        }
+        
+        
         btn1.setButtonOff()
         btn2.setButtonOff()
         btn3.setButtonOff()

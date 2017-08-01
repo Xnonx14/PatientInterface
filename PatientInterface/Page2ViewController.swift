@@ -39,6 +39,10 @@ class Page2ViewController: UIViewController {
         for i in 0..<size{
             segList[i].selectedSegmentIndex = 0
         }
+        ToggleableButton.clearSet1()
+        ToggleableButton.clearSet2()
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

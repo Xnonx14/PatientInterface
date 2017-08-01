@@ -40,10 +40,21 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         
     }
     @IBAction func clearPages(_ sender: UIButton) {
-        GeneralViewController.variables.page1.clearAll(btnClearAll)
-        GeneralViewController.variables.page2.clearAllBtnPressed(btnClearAll)
-        GeneralViewController.variables.page3.clearAll(btnClearAll)
-        GeneralViewController.variables.page4.clearAll(btnClearAll)
+        if(GeneralViewController.variables.page1.viewIfLoaded != nil){
+            GeneralViewController.variables.page1.clearAll(btnClearAll)
+        }
+        if(GeneralViewController.variables.page2.viewIfLoaded != nil){
+            GeneralViewController.variables.page2.clearAllBtnPressed(btnClearAll)
+        }
+        if(GeneralViewController.variables.page3.viewIfLoaded != nil){
+            GeneralViewController.variables.page3.clearAll(btnClearAll)
+        }
+        if(GeneralViewController.variables.page4.viewIfLoaded != nil){
+            GeneralViewController.variables.page4.clearAll(btnClearAll)
+        }
+        
+        
+        
     }
     @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {
         GeneralViewController.changeView(sender.direction.rawValue)
