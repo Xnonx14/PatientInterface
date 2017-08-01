@@ -27,6 +27,8 @@ class Page2ViewController: UIViewController {
         static var paragraph: String = ""
         static var myController: Page2ViewController!
         static var included:Bool = false
+        static var set1DefaultVar: ToggleableButton!
+        static var set2DefaultVar: ToggleableButton!
     }
     @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {
         GeneralViewController.changeView(sender.direction.rawValue)
@@ -41,6 +43,8 @@ class Page2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         variables.myController = self
+        variables.set1DefaultVar = set1Default
+        variables.set2DefaultVar = set2Default
         // Do any additional setup after loading the view.
     }
 

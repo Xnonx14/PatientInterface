@@ -49,6 +49,7 @@ class ToggleableButton: UIButton {
                         return
                     }else{
                         variables.set1.append(self)
+                        Page2ViewController.variables.set1DefaultVar.setButtonOff()
                     }
                 }
             }
@@ -73,6 +74,7 @@ class ToggleableButton: UIButton {
                         return
                     }else{
                         variables.set2.append(self)
+                        Page2ViewController.variables.set2DefaultVar.setButtonOff()
                     }
                 }
             }
