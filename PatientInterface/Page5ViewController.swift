@@ -59,7 +59,10 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
     func createBody(){
         subject = seg1.titleForSegment(at: seg1.selectedSegmentIndex)!
         let p1:String = seg2.titleForSegment(at: seg2.selectedSegmentIndex)!
-        let p2:String = seg3.titleForSegment(at: seg3.selectedSegmentIndex)!
+        var p2:String = seg3.titleForSegment(at: seg3.selectedSegmentIndex)!
+        if(p2 == "AA"){
+            p2 = "Aortic Aneurysm"
+        }
         let p3:String = seg4.titleForSegment(at: seg4.selectedSegmentIndex)!
         let p4:String = tfName.text!
         combinedBody = p1 + " for patient in room " + p3 + ". \nDiagnosis is " + p2  + ". \nPatient last name is " + p4 + ". \nThanks!"

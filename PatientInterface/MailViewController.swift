@@ -21,21 +21,12 @@ class MailViewController: UIViewController, MFMailComposeViewControllerDelegate,
     @IBOutlet weak var btn4: ToggleableButton!
     @IBOutlet weak var btn5: ToggleableButton!
     @IBOutlet weak var btn6: ToggleableButton!
-
+    
     
     var combinedBody:String = "";
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mailAddress.delegate = self
-        // Do any additional setup after loading the view.
-        /*
-        btn1.setButtonOff()
-        btn2.setButtonOff()
-        btn3.setButtonOff()
-        btn4.setButtonOff()
-        btn5.setButtonOff()
-        btn6.setButtonOff()
-         */
     }
     
     @IBAction func Swiped(_ sender: UISwipeGestureRecognizer) {

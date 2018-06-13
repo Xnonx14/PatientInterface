@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="ipad9_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Wew-Xc-7IX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4eB-6v-mtu">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chest Pain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbp-eI-cCg">
@@ -267,25 +267,25 @@
                                     <action selector="CloseBtnClicked:" destination="0WO-r8-e8o" eventType="touchUpInside" id="xdz-qL-twK"/>
                                 </connections>
                             </button>
-                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4N-OZ-mjh">
-                                <rect key="frame" x="320" y="80" width="415" height="340"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="kfU-e2-I0J" kind="embed" id="EoO-p8-Chk"/>
-                                </connections>
-                            </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2QQ-gI-Pf8">
-                                <rect key="frame" x="320" y="80" width="415" height="340"/>
+                                <rect key="frame" x="318" y="83" width="481" height="340"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="5x4-Bt-VcT" kind="embed" identifier="sobSegue" id="xcb-TC-6Mq"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4s-ic-Ksi">
-                                <rect key="frame" x="320" y="80" width="415" height="340"/>
+                                <rect key="frame" x="318" y="83" width="481" height="340"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="c7m-uT-WpT" kind="embed" identifier="CPsegue" id="yOL-ZZ-YFx"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4N-OZ-mjh">
+                                <rect key="frame" x="318" y="83" width="481" height="340"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="kfU-e2-I0J" kind="embed" id="EoO-p8-Chk"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -346,7 +346,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2E7-H3-mSB">
@@ -479,14 +479,6 @@
                                     <action selector="clearAll:" destination="9pv-A4-QxB" eventType="touchUpInside" id="GOg-Qw-6Ni"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW4-im-r6e">
-                                <rect key="frame" x="697" y="20" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Clear All"/>
-                                <connections>
-                                    <action selector="clearPages:" destination="9pv-A4-QxB" eventType="touchUpInside" id="3bx-DX-G9Y"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7K-0W-Ozl">
                                 <rect key="frame" x="334" y="252" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -559,6 +551,30 @@
                                     <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="NZz-nA-4gT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtB-He-gmX">
+                                <rect key="frame" x="86" y="370" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CAD"/>
+                                <connections>
+                                    <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="tjK-Ge-EJp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W58-a8-ivt">
+                                <rect key="frame" x="184" y="370" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AFIB"/>
+                                <connections>
+                                    <action selector="btnPressedCC:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Jjb-PV-TkV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW4-im-r6e">
+                                <rect key="frame" x="757" y="20" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear All"/>
+                                <connections>
+                                    <action selector="clearPages:" destination="9pv-A4-QxB" eventType="touchUpInside" id="3bx-DX-G9Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -571,7 +587,9 @@
                     <connections>
                         <outlet property="LName" destination="516-NE-Ysg" id="vJW-Nw-HPH"/>
                         <outlet property="barIcon" destination="acW-dT-cKf" id="M2f-Ka-qwR"/>
+                        <outlet property="btnAFIBCC" destination="W58-a8-ivt" id="TeP-3x-nlb"/>
                         <outlet property="btnCAD" destination="r7K-0W-Ozl" id="UCA-E6-mbL"/>
+                        <outlet property="btnCADCC" destination="rtB-He-gmX" id="m9I-jj-UuD"/>
                         <outlet property="btnCC" destination="Q2L-bT-HqC" id="gEb-RK-JFO"/>
                         <outlet property="btnCP" destination="h66-sy-4mb" id="0tC-q6-nwv"/>
                         <outlet property="btnClearAll" destination="lsE-ej-siP" id="8ny-yL-mYk"/>
@@ -614,7 +632,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exertion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6c-XC-XUv">
@@ -998,7 +1016,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zLm-Uy-Psa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ys1-ox-S8d">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2uV-IB-sm4">
@@ -1010,7 +1028,7 @@
                                 </segments>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ToQ-eZ-3zm">
-                                <rect key="frame" x="129" y="373" width="510" height="29"/>
+                                <rect key="frame" x="127" y="373" width="583" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="CP"/>
@@ -1020,6 +1038,7 @@
                                     <segment title="Syncope"/>
                                     <segment title="CAD"/>
                                     <segment title="Murmur"/>
+                                    <segment title="AA"/>
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOx-Ch-e4x">
@@ -1186,7 +1205,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sww-Av-FLJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cHH-bR-8N9">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-n7-f2K">
@@ -1211,7 +1230,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-os-KR3">
-                                <rect key="frame" x="93" y="78" width="583" height="29"/>
+                                <rect key="frame" x="87" y="78" width="595" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Default"/>
@@ -1225,10 +1244,11 @@
                                     <segment title="ECG"/>
                                     <segment title="CC"/>
                                     <segment title="Murmur"/>
+                                    <segment title="AFID"/>
                                 </segments>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fqO-3k-lOi">
-                                <rect key="frame" x="93" y="141" width="583" height="29"/>
+                                <rect key="frame" x="87" y="141" width="595" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Default"/>
@@ -1242,6 +1262,7 @@
                                     <segment title="ECG"/>
                                     <segment title="CC"/>
                                     <segment title="Murmur"/>
+                                    <segment title="AFID"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zv-zY-JhN" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
@@ -1286,7 +1307,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eDb-zb-DuH">
-                                <rect key="frame" x="93" y="211" width="583" height="29"/>
+                                <rect key="frame" x="87" y="211" width="595" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Default"/>
@@ -1300,6 +1321,7 @@
                                     <segment title="ECG"/>
                                     <segment title="CC"/>
                                     <segment title="Murmur"/>
+                                    <segment title="AFID"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
@@ -1348,7 +1370,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sNm-Gf-EP9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8YH-p7-50U">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fe0-X4-luK">
@@ -1563,7 +1585,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aOg-ws-9Lm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="haM-gN-Xjq">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF1-Z5-tEN" customClass="ToggleableButton" customModule="PatientInterface" customModuleProvider="target">
@@ -1934,7 +1956,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Xwh-oN-LUw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eDV-r1-f3A">
-                        <rect key="frame" x="0.0" y="0.0" width="415" height="340"/>
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="340"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fD-IH-egL">
@@ -2063,7 +2085,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mj3-sp-yhd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SW7-LQ-Iez">
-                        <rect key="frame" x="0.0" y="0.0" width="415" height="340"/>
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="340"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjU-Jr-QDl">
@@ -2103,7 +2125,7 @@
                         <viewControllerLayoutGuide type="bottom" id="x19-yv-xKQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nnn-AI-6fK" customClass="CPView" customModule="PatientInterface" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="415" height="340"/>
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="340"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-Lb-lEC">

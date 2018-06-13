@@ -27,6 +27,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnCAD: UIButton!
     @IBOutlet weak var btnECG: UIButton!
     @IBOutlet weak var btnCC: UIButton!
+    @IBOutlet weak var btnCADCC: UIButton!
+    @IBOutlet weak var btnAFIBCC: UIButton!
     struct variables{
         static var myController:FirstViewController!
         static var paragraph = "Default Text";
@@ -184,7 +186,13 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
                 combo2[u] = "shortness of breath"
                 combined2 += combo2[u]
             }else if(combo2[u].contains("Clearance")){
-                combo2[u] = "Cardiac Clearance"
+                combo2[u] = "cardiac clearance"
+                combined2 += combo2[u]
+            }else if(combo2[u].contains("CAD")){
+                combo2[u] = "coronary artery disease"
+                combined2 += combo2[u]
+            }else if(combo2[u].contains("AFIB")){
+                combo2[u] = "atrial fibrillation"
                 combined2 += combo2[u]
             }else{
                 combined2 += combo2[u].lowercased()
@@ -247,6 +255,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         dizziness.setTitleColor(defaultColor, for: UIControlState())
         btnMurmur.setTitleColor(defaultColor, for: UIControlState())
         btnCC.setTitleColor(defaultColor, for: UIControlState())
+        btnCADCC.setTitleColor(defaultColor, for: UIControlState())
+        btnAFIBCC.setTitleColor(defaultColor, for: UIControlState())
         variables.myController = self
         btnNone.setTitleColor(selectedColor, for: UIControlState())
         tfAge.keyboardType = UIKeyboardType.numberPad;

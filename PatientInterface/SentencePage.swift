@@ -62,6 +62,9 @@ class SentencePage{
             case 10:
                 p1 = "Murmur -"
                 break;
+            case 11:
+                p1 = "Atrial Fibrillation -"
+                break;
             default:
                 p1 = ""
             }
@@ -98,6 +101,9 @@ class SentencePage{
             case 10:
                 p2 = "Murmur -"
                 break;
+            case 11:
+                p2 = "Atrial Fibrillation -"
+                break;
             default:
                 p2 = ""
             }
@@ -133,6 +139,9 @@ class SentencePage{
                 break;
             case 10:
                 p3 = "Murmur -"
+                break;
+            case 11:
+                p3 = "Atrial Fibrillation -"
                 break;
             default:
                 p3 = ""
