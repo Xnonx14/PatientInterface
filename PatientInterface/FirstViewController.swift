@@ -4,7 +4,7 @@
 //
 //  Created by Kevin Chang on 8/4/16.
 //  Copyright © 2016 KayGames. All rights reserved.
-//
+// This comment is here to test if data was transfered to new mac correctly
 
 import UIKit
 
