@@ -62,6 +62,8 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
         var p2:String = seg3.titleForSegment(at: seg3.selectedSegmentIndex)!
         if(p2 == "AA"){
             p2 = "Aortic Aneurysm"
+        }else if(p2 == "AF"){
+            p2 = "Atrial fibrillation"
         }
         let p3:String = seg4.titleForSegment(at: seg4.selectedSegmentIndex)!
         let p4:String = tfName.text!
