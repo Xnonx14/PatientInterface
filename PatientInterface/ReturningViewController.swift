@@ -38,7 +38,7 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
     }
     @IBAction func btnPalpsToggled(_ sender: UIButton) {
         toggleButton(sender)
-        var defaultColor = btnClose.currentTitleColor
+        let defaultColor = btnClose.currentTitleColor
         if(sender.backgroundColor == defaultColor){
             viewWindow3.isHidden = false
         }else{
@@ -47,7 +47,7 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
     }
     @IBAction func btnSOBToggled(_ sender: UIButton) {
         toggleButton(sender)
-        var defaultColor = btnClose.currentTitleColor
+        let defaultColor = btnClose.currentTitleColor
         if(sender.backgroundColor == defaultColor){
             viewWindow2.isHidden = false
         }else{
@@ -57,7 +57,7 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
     @IBOutlet weak var btnClose: UIButton!
     @IBAction func btnCPToggled(_ sender: UIButton) {
         toggleButton(sender)
-        var defaultColor = btnClose.currentTitleColor
+        let defaultColor = btnClose.currentTitleColor
         if(sender.backgroundColor == defaultColor){
             viewWindow1.isHidden = false
         }else{
@@ -118,7 +118,7 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
         if(p6 != ""){
             array2.append(p6)
         }
-        var size = array2.count - 1
+        let size = array2.count - 1
         if(size>=0){
             endString = endString + "Tests order: "
             for j in 0...(size){
@@ -160,7 +160,7 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
             }
             array3.append(part3)
         }
-        var size = array3.count - 1
+        let size = array3.count - 1
         var endString = ""
         if(size>=0){
             endString = endString + "Follow up: "
@@ -188,10 +188,10 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
         }else{
             endString0 = "No Chest Pain"
         }
-        var endString1 = variables.viewControllerSOB.createSOBString()
-        var endString2 = variables.viewControllerPalps.createString()
-        var endString3 = testsBody()
-        var endString4 = followupBody()
+        let endString1 = variables.viewControllerSOB.createSOBString()
+        let endString2 = variables.viewControllerPalps.createString()
+        let endString3 = testsBody()
+        let endString4 = followupBody()
         var array = [String]()
         if(endString0 != ""){
             array.append(endString0)
@@ -208,7 +208,7 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
         if(endString2 != ""){
             array.append(endString4)
         }
-        var size = array.count - 1
+        let size = array.count - 1
         if(size >= 0){
             for i in 0...(size){
                 if(i < size){
@@ -222,17 +222,17 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
     }
     @IBAction func btnTestsOrder(_ sender: UIButton) {
         if(sender.currentTitleColor == UIColor.gray){
-            sender.setTitleColor(variables.defaultColor, for: UIControlState.normal)
+            sender.setTitleColor(variables.defaultColor, for: UIControl.State.normal)
         }else{
-            sender.setTitleColor(UIColor.gray, for: UIControlState.normal)
+            sender.setTitleColor(UIColor.gray, for: UIControl.State.normal)
         }
     }
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
-        var combinedBody = createBody();
-        var mailAddress = "nchang@northwell.edu"
+        let combinedBody = createBody();
+        let mailAddress = "nchang@northwell.edu"
         mailComposerVC.setToRecipients([mailAddress])
         mailComposerVC.setSubject("Returning Patient")
         mailComposerVC.setMessageBody(combinedBody, isHTML: false)
@@ -244,7 +244,7 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
         sendMailErrorAlert.show()
     }
     
-    func mailComposeController(_ controller: MFMailComposeViewController!, didFinishWith result: MFMailComposeResult, error: Error!) {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
         
     }
@@ -254,7 +254,7 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
         sender.backgroundColor = UIColor.gray
     }
     func setupButtonsHelper2(_ sender: UIButton){
-        sender.setTitleColor(UIColor.gray, for: UIControlState.normal)
+        sender.setTitleColor(UIColor.gray, for: UIControl.State.normal)
     }
     @IBOutlet weak var btnSTR: UIButton!
     @IBOutlet weak var btnTTE: UIButton!
@@ -278,16 +278,16 @@ class ReturningViewController: UIViewController, MFMailComposeViewControllerDele
     }
     func toggleButton(_ sender: UIButton){
         var defaultColor = btnClose.currentTitleColor
-        sender.setTitleColor(UIColor.black, for: UIControlState.normal)
+        sender.setTitleColor(UIColor.black, for: UIControl.State.normal)
         if(sender.backgroundColor == defaultColor){
             sender.backgroundColor = UIColor.red
-            sender.setTitle("No", for: UIControlState.normal)
+            sender.setTitle("No", for: UIControl.State.normal)
         }else if(sender.backgroundColor == UIColor.red){
             sender.backgroundColor = UIColor.gray
-            sender.setTitle("", for: UIControlState.normal)
+            sender.setTitle("", for: UIControl.State.normal)
         }else{
             sender.backgroundColor = defaultColor
-            sender.setTitle("Yes", for: UIControlState.normal)
+            sender.setTitle("Yes", for: UIControl.State.normal)
         }
     }
 

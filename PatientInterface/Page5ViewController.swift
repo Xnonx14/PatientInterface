@@ -19,6 +19,7 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
     @IBOutlet weak var switch3: UISwitch!
     @IBOutlet weak var switch4: UISwitch!
     @IBOutlet weak var switch2: UISwitch!
+    @IBOutlet weak var switchbnan: UISwitch!
     
     
     var combinedBody = ""
@@ -79,13 +80,16 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
             emails.append("cponce@northwell.edu")
         }
         if(switch2.isOn){
-             
+            emails.append("awong13@northwell.edu")
         }
         if(switch3.isOn){
             emails.append("tzhou1@northwell.edu")
         }
         if(switch4.isOn){
-            emails.append("wtong@northwell.edu")
+            emails.append("cmoklomast@northwell.edu")
+        }
+        if(switchbnan.isOn){
+            emails.append("bnan@northwell.edu")
         }
         emails.append("nchang@northwell.edu")
         mailComposerVC.setToRecipients(emails)

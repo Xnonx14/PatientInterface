@@ -21,12 +21,12 @@ class ToggleableButton: UIButton {
         self.addTarget(self, action: #selector(self.toggleButton), for: .touchUpInside)
     }
     public func setButtonOn(){
-        self.setTitleColor(UIColor(red: 0, green: 0.478431, blue: 1, alpha: 1),for: UIControlState.normal)
+        self.setTitleColor(UIColor(red: 0, green: 0.478431, blue: 1, alpha: 1),for: UIControl.State.normal)
     }
     public func setButtonOff(){
-        self.setTitleColor(UIColor.gray, for: UIControlState.normal)
+        self.setTitleColor(UIColor.gray, for: UIControl.State.normal)
     }
-    public func toggleButton(){
+    @objc public func toggleButton(){
         if(self.accessibilityIdentifier != nil){
             if((self.accessibilityIdentifier?.hasPrefix("id"))!){
                 if(self.currentTitle == "Default"){

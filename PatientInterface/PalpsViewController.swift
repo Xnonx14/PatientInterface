@@ -40,21 +40,21 @@ class PalpsViewController: UIViewController {
     
     @IBAction func toggledBtn(_ sender: UIButton) {
         if(sender.currentTitleColor == UIColor.gray){
-            sender.setTitleColor(variables.defaultColor, for: UIControlState.normal)
+            sender.setTitleColor(variables.defaultColor, for: UIControl.State.normal)
         }else{
-            sender.setTitleColor(UIColor.gray, for: UIControlState.normal)
+            sender.setTitleColor(UIColor.gray, for: UIControl.State.normal)
         }
     }
     func initialize(){
-        btnF.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btnN.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btnE2.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btnR2.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btnR3.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btnI3.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btnS.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btnM.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btnH.setTitleColor(UIColor.gray, for: UIControlState.normal)
+        btnF.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btnN.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btnE2.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btnR2.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btnR3.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btnI3.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btnS.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btnM.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btnH.setTitleColor(UIColor.gray, for: UIControl.State.normal)
     }
 
     /*

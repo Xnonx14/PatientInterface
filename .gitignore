@@ -1,0 +1,10 @@
+PatientInterface.xcodeproj/*
+*.xcuserstate
+*/PatientInterface.xcodeproj
+*.xcodeproj/*
+DerivedData/
+xcuserdata
+PatientInterface.xcodeproj/xcuserdata/*
+PatientInterface.xcodeproj/project.xcworkspace/xcuserdata/*
+PatientInterface/developer profile key.p12
+.DS_Store

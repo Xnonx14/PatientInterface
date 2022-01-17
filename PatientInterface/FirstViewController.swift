@@ -78,35 +78,35 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         variables.lastName = "";
         tfAge.text = "";
         switchGender.selectedSegmentIndex = 0;
-        btnNone.setTitleColor(selectedColor, for: UIControlState())
+        btnNone.setTitleColor(selectedColor, for: UIControl.State())
         edited();
     }
     @IBAction func pressNone(_ sender: UIButton) {
         if(sender.currentTitleColor != defaultColor){
             return;
         }
-        btnHTN.setTitleColor(defaultColor, for: UIControlState())
-        btnDM.setTitleColor(defaultColor, for: UIControlState())
-        btnHLD.setTitleColor(defaultColor, for: UIControlState())
-        btnCAD.setTitleColor(defaultColor, for: UIControlState())
+        btnHTN.setTitleColor(defaultColor, for: UIControl.State())
+        btnDM.setTitleColor(defaultColor, for: UIControl.State())
+        btnHLD.setTitleColor(defaultColor, for: UIControl.State())
+        btnCAD.setTitleColor(defaultColor, for: UIControl.State())
         list.removeAll()
-        sender.setTitleColor(selectedColor, for: UIControlState())
+        sender.setTitleColor(selectedColor, for: UIControl.State())
         edited()
     }
     
     func registerButtonPMH(_ btn: UIButton){
         if(list.contains(btn)){
-            list.remove(at: list.index(of: btn)!)
+            list.remove(at: list.firstIndex(of: btn)!)
         }else{
             list.append(btn);
         }
         if(list.isEmpty){
-            btnNone.setTitleColor(selectedColor, for: UIControlState())
+            btnNone.setTitleColor(selectedColor, for: UIControl.State())
         }
     }
     func registerButtonCC(_ btn: UIButton){
         if(list2.contains(btn)){
-            list2.remove(at: list2.index(of: btn)!)
+            list2.remove(at: list2.firstIndex(of: btn)!)
         }else{
             list2.append(btn);
         }
@@ -114,11 +114,11 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     func deselectAllButtons(){
         let size = list.count;
         for i in 0..<size{
-            list[i].setTitleColor(defaultColor, for: UIControlState())
+            list[i].setTitleColor(defaultColor, for: UIControl.State())
         }
         let size2 = list2.count;
         for i in 0..<size2{
-            list2[i].setTitleColor(defaultColor, for: UIControlState())
+            list2[i].setTitleColor(defaultColor, for: UIControl.State())
         }
     }
     @IBAction func fName(_ sender: UITextField) {
@@ -220,10 +220,10 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         edited()
         registerButtonPMH(sender);
         if(sender.currentTitleColor != defaultColor){
-            sender.setTitleColor(defaultColor, for: UIControlState())
+            sender.setTitleColor(defaultColor, for: UIControl.State())
         }else{
-            sender.setTitleColor(selectedColor, for: UIControlState())
-            btnNone.setTitleColor(defaultColor, for: UIControlState())
+            sender.setTitleColor(selectedColor, for: UIControl.State())
+            btnNone.setTitleColor(defaultColor, for: UIControl.State())
         }
     }
     
@@ -232,9 +232,9 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         edited()
         registerButtonCC(sender);
         if(sender.currentTitleColor != defaultColor){
-            sender.setTitleColor(defaultColor, for: UIControlState())
+            sender.setTitleColor(defaultColor, for: UIControl.State())
         }else{
-            sender.setTitleColor(selectedColor, for: UIControlState())
+            sender.setTitleColor(selectedColor, for: UIControl.State())
         }
     }
     override func viewDidLoad() {
@@ -243,22 +243,22 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             selectedColor = btnHTN.currentTitleColor;
         }
         //make all buttons in default state
-        btnHTN.setTitleColor(defaultColor, for: UIControlState())
-        btnDM.setTitleColor(defaultColor, for: UIControlState())
-        btnHLD.setTitleColor(defaultColor, for: UIControlState())
-        btnCP.setTitleColor(defaultColor, for: UIControlState())
-        btnSB.setTitleColor(defaultColor, for: UIControlState())
-        btnPalps.setTitleColor(defaultColor, for: UIControlState())
-        btnSync.setTitleColor(defaultColor, for: UIControlState())
-        btnCAD.setTitleColor(defaultColor, for: UIControlState())
-        btnECG.setTitleColor(defaultColor, for: UIControlState())
-        dizziness.setTitleColor(defaultColor, for: UIControlState())
-        btnMurmur.setTitleColor(defaultColor, for: UIControlState())
-        btnCC.setTitleColor(defaultColor, for: UIControlState())
-        btnCADCC.setTitleColor(defaultColor, for: UIControlState())
-        btnAFIBCC.setTitleColor(defaultColor, for: UIControlState())
+        btnHTN.setTitleColor(defaultColor, for: UIControl.State())
+        btnDM.setTitleColor(defaultColor, for: UIControl.State())
+        btnHLD.setTitleColor(defaultColor, for: UIControl.State())
+        btnCP.setTitleColor(defaultColor, for: UIControl.State())
+        btnSB.setTitleColor(defaultColor, for: UIControl.State())
+        btnPalps.setTitleColor(defaultColor, for: UIControl.State())
+        btnSync.setTitleColor(defaultColor, for: UIControl.State())
+        btnCAD.setTitleColor(defaultColor, for: UIControl.State())
+        btnECG.setTitleColor(defaultColor, for: UIControl.State())
+        dizziness.setTitleColor(defaultColor, for: UIControl.State())
+        btnMurmur.setTitleColor(defaultColor, for: UIControl.State())
+        btnCC.setTitleColor(defaultColor, for: UIControl.State())
+        btnCADCC.setTitleColor(defaultColor, for: UIControl.State())
+        btnAFIBCC.setTitleColor(defaultColor, for: UIControl.State())
         variables.myController = self
-        btnNone.setTitleColor(selectedColor, for: UIControlState())
+        btnNone.setTitleColor(selectedColor, for: UIControl.State())
         tfAge.keyboardType = UIKeyboardType.numberPad;
         
         

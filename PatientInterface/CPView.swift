@@ -57,87 +57,87 @@ class CPView: UIView {
         btn4M.setSwitch(input: switchM)
     }
     func setBtnOff(){
-        btn1D.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn1W.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn1M.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn1Y.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2S.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2L1.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2R.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2U.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2L2.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn3T.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn3S.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn3F.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn3V.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn4E.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn4I.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn4T.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn4M.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn5S.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn5M.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn5H.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn5D.setTitleColor(UIColor.gray, for: UIControlState.normal)
+        btn1D.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn1W.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn1M.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn1Y.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2S.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2L1.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2R.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2U.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2L2.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn3T.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn3S.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn3F.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn3V.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn4E.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn4I.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn4T.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn4M.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn5S.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn5M.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn5H.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn5D.setTitleColor(UIColor.gray, for: UIControl.State.normal)
     }
     @IBAction func triggerColumn1(_ sender: UIButton) {
         if(sender.currentTitleColor == variables.defaultColor){
-            sender.setTitleColor(UIColor.gray, for: UIControlState.normal)
+            sender.setTitleColor(UIColor.gray, for: UIControl.State.normal)
             return
         }
-        btn1D.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn1W.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn1M.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn1Y.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        sender.setTitleColor(variables.defaultColor, for: UIControlState.normal)
+        btn1D.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn1W.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn1M.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn1Y.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        sender.setTitleColor(variables.defaultColor, for: UIControl.State.normal)
     }
    
     @IBAction func triggerColumn2(_ sender: UIButton) {
         if(sender.currentTitleColor == variables.defaultColor){
-            sender.setTitleColor(UIColor.gray, for: UIControlState.normal)
+            sender.setTitleColor(UIColor.gray, for: UIControl.State.normal)
             return
         }
-        btn2S.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2L1.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2R.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2U.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn2L2.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        sender.setTitleColor(variables.defaultColor, for: UIControlState.normal)
+        btn2S.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2L1.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2R.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2U.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn2L2.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        sender.setTitleColor(variables.defaultColor, for: UIControl.State.normal)
     }
     @IBAction func triggerColumn3(_ sender: UIButton) {
         if(sender.currentTitleColor == variables.defaultColor){
-            sender.setTitleColor(UIColor.gray, for: UIControlState.normal)
+            sender.setTitleColor(UIColor.gray, for: UIControl.State.normal)
             return
         }
-        btn3T.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn3S.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn3F.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn3V.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        sender.setTitleColor(variables.defaultColor, for: UIControlState.normal)
+        btn3T.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn3S.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn3F.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn3V.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        sender.setTitleColor(variables.defaultColor, for: UIControl.State.normal)
     }
     @IBAction func triggerColumn4(_ sender: UIButtonWInfo) {
         if(sender.currentTitleColor == variables.defaultColor){
-            sender.setTitleColor(UIColor.gray, for: UIControlState.normal)
+            sender.setTitleColor(UIColor.gray, for: UIControl.State.normal)
             sender.getSwitch().isHidden = true
             return
         }
-        sender.setTitleColor(variables.defaultColor, for: UIControlState.normal)
+        sender.setTitleColor(variables.defaultColor, for: UIControl.State.normal)
         sender.getSwitch().isHidden = false
     }
     @IBAction func triggerColumn5(_ sender: UIButton) {
         if(sender.currentTitleColor == variables.defaultColor){
-            sender.setTitleColor(UIColor.gray, for: UIControlState.normal)
+            sender.setTitleColor(UIColor.gray, for: UIControl.State.normal)
             return
         }
-        btn5S.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn5M.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn5H.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        btn5D.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        sender.setTitleColor(variables.defaultColor, for: UIControlState.normal)
+        btn5S.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn5M.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn5H.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        btn5D.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        sender.setTitleColor(variables.defaultColor, for: UIControl.State.normal)
     }
     func setCPString(){
         var endString = ""
         var p1 = ""
-        var defaultColor = variables.defaultColor
+        let defaultColor = variables.defaultColor
         if(btn1D.currentTitleColor == defaultColor){
             p1 = "days"
         }else if(btn1W.currentTitleColor == defaultColor){
@@ -249,7 +249,7 @@ class CPView: UIView {
         if(p5 != ""){
             array.append(p5)
         }
-        var size = array.count - 1
+        let size = array.count - 1
         if(size >= 0){
             for i in 0...(size){
                 print(i)
