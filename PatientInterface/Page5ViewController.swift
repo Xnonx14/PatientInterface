@@ -63,7 +63,7 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
         subject = seg1.titleForSegment(at: seg1.selectedSegmentIndex)!
         
         if seg5.selectedSegmentIndex != 0{
-            subject = subject + " for " + seg5.titleForSegment(at: seg5.selectedSegmentIndex)!
+            subject = subject + " for Dr. " + seg5.titleForSegment(at: seg5.selectedSegmentIndex)!
         }
         
         let p1:String = seg2.titleForSegment(at: seg2.selectedSegmentIndex)!
@@ -80,6 +80,8 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
         
         if seg5.selectedSegmentIndex != 0{
             p5 = ". For Dr." + p5
+        }else{
+            p5 = ""
         }
         
         combinedBody = p1 + " for patient in room " + p3 + ". \nDiagnosis is " + p2  + p5 + ". \nPatient last name is " + p4 + ". \nThanks!"
