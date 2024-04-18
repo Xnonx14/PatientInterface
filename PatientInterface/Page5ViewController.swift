@@ -19,6 +19,7 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
     @IBOutlet weak var switch3: UISwitch!
     @IBOutlet weak var switch4: UISwitch!
     @IBOutlet weak var switch2: UISwitch!
+    @IBOutlet weak var seg5: UISegmentedControl!
     @IBOutlet weak var switchbnan: UISwitch!
     
     
@@ -53,12 +54,18 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
         seg2.selectedSegmentIndex = 0
         seg3.selectedSegmentIndex = 0
         seg4.selectedSegmentIndex = 0
+        seg5.selectedSegmentIndex = 0
         switch1.isOn = true
         switch2.isOn = true
         tfName.text = ""
     }
     func createBody(){
         subject = seg1.titleForSegment(at: seg1.selectedSegmentIndex)!
+        
+        if seg5.selectedSegmentIndex != 0{
+            subject = subject + " for " + seg5.titleForSegment(at: seg5.selectedSegmentIndex)!
+        }
+        
         let p1:String = seg2.titleForSegment(at: seg2.selectedSegmentIndex)!
         var p2:String = seg3.titleForSegment(at: seg3.selectedSegmentIndex)!
         if(p2 == "AA"){
@@ -68,7 +75,14 @@ class Page5ViewController: UIViewController, MFMailComposeViewControllerDelegate
         }
         let p3:String = seg4.titleForSegment(at: seg4.selectedSegmentIndex)!
         let p4:String = tfName.text!
-        combinedBody = p1 + " for patient in room " + p3 + ". \nDiagnosis is " + p2  + ". \nPatient last name is " + p4 + ". \nThanks!"
+        
+        var p5:String = seg5.titleForSegment(at: seg5.selectedSegmentIndex)!
+        
+        if seg5.selectedSegmentIndex != 0{
+            p5 = ". For Dr." + p5
+        }
+        
+        combinedBody = p1 + " for patient in room " + p3 + ". \nDiagnosis is " + p2  + p5 + ". \nPatient last name is " + p4 + ". \nThanks!"
     }
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
